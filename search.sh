@@ -42,7 +42,7 @@ else
 	echo "arc already running"
 fi
 #export LD_LIBRARY_PATH=../00.09.00/libs; export PYTHONPATH=../00.09.00:../00.09.00/gnlpy:../00.09.00/gnlpy/lib:../00.09.00/libs; python3.6 knn_binding_usa.py $1 | tee -a "logs/$LOGFILE"
-export LD_LIBRARY_PATH=00.09.00/libs; export PYTHONPATH=00.09.00:00.09.00/gnlpy:00.09.00/gnlpy/lib:00.09.00/libs; cd ..; python3.6 knn_binding_usa.py $1 | tee -a "gemini_tamu_2019/logs/$LOGFILE": ; cd gemini_tamu_2019
+export LD_LIBRARY_PATH=00.09.00/libs; export PYTHONPATH=00.09.00:00.09.00/gnlpy:00.09.00/gnlpy/lib:00.09.00/libs; cd ..; python3.6 knn_binding_usa.py $1 | tee -a "gemini_tamu_2019/logs/$LOGFILE" ; cd gemini_tamu_2019
 proc=$(sudo sshpass -p "root" ssh -o StrictHostKeyChecking=no root@$2 'ps -o comm,pid | grep -v grep | grep gsifw ' | awk '{print $2;}' )
 if [[ $proc != '' ]]
 then
