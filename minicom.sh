@@ -31,6 +31,7 @@ BOARD_DATE=$(sudo sshpass -p "root" ssh -o StrictHostKeyChecking=no root@192.168
 BOARD_DATE=`echo "$BOARD_DATE"|sed -e 's/ /_/g'`
 echo "Got BOARD date=$BOARD_DATE"
 echo
+
 # Form the log file name
 LOGFILE="$LPATH/PCDMINICOM--$PC_DATE--$BOARD_DATE"
 echo "Will log to file '$LOGFILE'"
@@ -38,7 +39,7 @@ echo
 
 # Launch minicom
 echo "Launch minicom..."
-minicom --device /dev/ttyUSB1 -C "logs/$LOGFILE"
+minicom --device /dev/ttyUSB1 -C "$LOGFILE"
 
 # Put the <STRING> as next line of log file
 echo "" >> "$LOGFILE"
