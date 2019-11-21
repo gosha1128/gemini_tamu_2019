@@ -1,8 +1,8 @@
 #!/bin/bash
 
-if [[ $# -lt 2 ]]
+if [[ $# -lt 3 ]]
   then
-    echo "usage : ./search iter_num (0 for infinite) Board_IP "
+    echo "usage : ./search.sh iter_num (0 for infinite) Board_IP <STRING>"
     exit 1	  
 fi
 
@@ -28,6 +28,9 @@ echo "pc date=$PC_DATE" > "logs/$LOGFILE"
 
 # Put the board date as next line of log file
 echo "board date=$BOARD_DATE" >> "logs/$LOGFILE"
+
+# Put the <STRING> as next line of log file
+echo "PARAMETERS: $@" >> "logs/$LOGFILE"
 
 proc2=$(sudo sshpass -p "root" ssh -o StrictHostKeyChecking=no root@$2 'ps -o comm,pid | grep -v grep | grep gsifw ' | awk '{print $2;}' )
 #echo $proc2

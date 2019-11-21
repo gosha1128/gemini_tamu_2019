@@ -1,4 +1,11 @@
 #!/bin/bash
+
+if [[ $# -lt 1 ]]
+  then
+    echo "usage : ./minicom.sh <STRING>"
+    exit 1
+fi
+
 mkdir -p "logs"
 
 # Create a name for the PC log file based on the date
@@ -19,3 +26,7 @@ echo "Will log to file 'logs/$LOGFILE'"
 # Launch minicom
 echo "Launch minicom..."
 minicom --device /dev/ttyUSB1 -C "logs/$LOGFILE"
+
+# Put the <STRING> as next line of log file
+echo "" >> "logs/$LOGFILE"
+echo "PARAMETERS: $@" >> "logs/$LOGFILE"
