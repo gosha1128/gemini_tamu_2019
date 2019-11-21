@@ -35,6 +35,6 @@ echo "PARAMETERS: $@" >> "logs/$LOGFILE"
 # Poll dmesg and write to standard out as well as log file
 echo "Monitoring and capturing dmesg logging..."
 while true;
-do dmesg -c | tee -a "logs/$LOGFILE"
+do dmesg -e -c | tee -a "logs/$LOGFILE"
 done
 
