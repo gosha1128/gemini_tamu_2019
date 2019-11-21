@@ -1,5 +1,8 @@
 import sys
 
+print("LOADING!")
+sys.stdout.flush()
+
 sys.path.insert(0, '00.09.00')
 sys.path.append('00.09.00/gnlpy')
 sys.path.append('00.09.00/gnlpy/lib')
@@ -28,7 +31,8 @@ def tearDownSim():
         raise Exception('gnl_bindings.destroy_simulator failed with {}'.format(s))
 
 def setUpGNL():
-    print("1")
+    print("1", flush=True)
+    sys.stdout.flush()
     s = gnl_bindings.gdl_init()
     if s:
         raise Exception('gnl_bindings.gdl_init failed with {}'.format(s))
@@ -50,7 +54,8 @@ def setUpGNL():
         raise Exception('gnl_bindings.create_contexts failed with {}'.format(s))
     ctx = gnl_ctxs[0]
     s = gnl_bindings.pm_ctl(ctx, True)
-    print("6")
+    print("6", flush=True)
+    sys.stdout.flush()
     if s:
         raise Exception('gnl_bindings.pm_ctl failed with {}'.format(s))
     return gdl_ctx, base_ctx, ctx
@@ -139,13 +144,13 @@ if __name__ == '__main__':
         for i in range(num_iterations):
             # Act
             start = time.time()
-            print("searching knn_hamming !!!!!!!!!!!")
+            print("searching knn_hamming !!!!!!!!!!!", flush=True)
             s = gnl_bindings.knn_hamming(ctx, gnl_out_vals, gnl_out_indices, gnl_queries, gnl_data, k)
             #print("ret", s)
             assert (s == 0)
             end = time.time()
             SearchTime = end - start
-            print(" search duration:", str(end - start))
+            print(" search duration:", str(end - start), flush=True)
             # convert the output from gnl arrays to numpy
             s, np_out_vals = gbu.create_numpy_array_from_gnl(ctx, gnl_out_vals)
             assert (s == 0)
@@ -155,13 +160,13 @@ if __name__ == '__main__':
         while True:
             # Act
             start = time.time()
-            print("searching knn_hamming !!!!!!!!!!!")
+            print("searching knn_hamming !!!!!!!!!!!", flush=True)
             s = gnl_bindings.knn_hamming(ctx, gnl_out_vals, gnl_out_indices, gnl_queries, gnl_data, k)
             #print("ret", s)
             assert (s == 0)
             end = time.time()
             SearchTime = end - start
-            print(" search duration:", str(end - start))
+            print(" search duration:", str(end - start), flush=True)
             # convert the output from gnl arrays to numpy
             s, np_out_vals = gbu.create_numpy_array_from_gnl(ctx, gnl_out_vals)
             print(s)

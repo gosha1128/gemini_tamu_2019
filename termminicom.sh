@@ -12,4 +12,4 @@ sleep 0.5
 echo
 echo "Running log capture script..."
 sleep 0.5
-sudo ./minicom.sh $1
+LF=$1 ./minicom.sh $1

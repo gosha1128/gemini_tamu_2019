@@ -1,6 +1,5 @@
 #!/bin/bash
 
-echo $#
 if [[ $# -lt 1 ]]
   then
     echo "usage : $0 <STRING>"
@@ -12,4 +11,4 @@ sleep 0.5
 echo
 echo "Running log capture script..."
 sleep 0.5
-sudo ./boarddmesg.sh $1
+LF=$1 ./pcdmesg.sh $1

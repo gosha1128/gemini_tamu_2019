@@ -1,6 +1,5 @@
 #!/bin/bash
 
-echo "$0,$1"
 if [[ $# -lt 1 ]]
   then
     echo "usage : $0 <STRING>"
@@ -21,7 +20,7 @@ echo "OK."
 sleep 0.5
 echo "Running log capture script..."
 sleep 0.5
-sudo sshpass -p "root" sudo sshpass -p "root" ssh -o StrictHostKeyChecking=no root@192.168.32.4 "./boarddmesg.sh $1"
+sudo sshpass -p "root" sudo sshpass -p "root" ssh -o StrictHostKeyChecking=no root@192.168.32.4 "LF=$1 ./boarddmesg.sh $1"
 if [ "$?" -ne "0" ]
 then
 	echo "SSH error"
