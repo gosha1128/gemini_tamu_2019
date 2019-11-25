@@ -1,0 +1,303 @@
+pc date=Sun_Nov_24_03:58:48_IST_2019
+board date=Sun_Nov_24_01:34:14_UTC_2019
+PARAMETERS: TEST3
+[Nov24 03:54] cp210x ttyUSB1: failed set req 0x1e size 4 status: -32
+[  +0.000008] cp210x ttyUSB1: failed to set baud rate to 300
+[Nov24 03:58] cp210x ttyUSB1: failed set req 0x1e size 4 status: -32
+[  +0.000009] cp210x ttyUSB1: failed to set baud rate to 300
+[Nov24 03:59] CTX open: minor=241 dev id=4096 ctx_id=0
+[  +0.000003] gsi_ctx_mmap: enter
+[  +0.000000] gsi_pci_dev_mmap_cb: enter [gsi-apu-pci.c]
+[  +0.000002] [MMAP]: gsi_pci_dev_mmap_cb: PHY [0x0000004000500000-0x000000417d800000], arena [0x0000004000000000-0x0000004200000000]
+[  +0.006042] [MMAP]: gsi_pci_dev_mmap_cb: exit OK
+[Nov24 03:59] gsi_ctx_mmap: return from plugin mmap cb [rc=0]
+[  +0.014346] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000001] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[Nov24 03:59] CTX[WR]: [pid=26690] apu/ctx/d0100c00: amount[4]=480/120 offset=0x00000000c067d852 dev_id=256 ctx_id=0 BLOCKING=0
+[  +0.000001] CTX[WR]: gsi_dev_enqueue_task: [amount 4] 
+[  +0.000000] CTX[WR]: gsi_dev_enqueue_task: [1#4] 
+[  +0.000007] CTX[WR]: gsi_dev_enqueue_task: [1#4] Task_ID[1]
+[  +0.000001] CTX[WR]: gsi_dev_enqueue_task: [2#4] 
+[  +0.000007] CTX[WR]: gsi_dev_enqueue_task: [2#4] Task_ID[2]
+[  +0.000000] CTX[WR]: gsi_dev_enqueue_task: [3#4] 
+[  +0.000007] CTX[WR]: gsi_dev_enqueue_task: [3#4] Task_ID[3]
+[  +0.000000] CTX[WR]: gsi_dev_enqueue_task: [4#4] 
+[  +0.000007] CTX[WR]: gsi_dev_enqueue_task: [4#4] Task_ID[4]
+[  +0.000000] CTX[WR]: doorbell GSI_PLUGIN_USR_TASK_READY [pid=26690] apu/ctx/d0100c00: after gsi_dev_enqueue_task len=480  amount=4 written=480
+[  +0.000001] [H2D]: gsi_pci_dev_hst2dev_cb(irq=3,value=0)
+[  +0.000000] gsi_send_doorbell_event(db=0,ev_id=3,ev_val=0)
+[  +0.000001] CTX[WR]: [pid=26690] apu/ctx/d0100c00: amount[1]=120/120 offset=0x00000000c067d852 dev_id=256 ctx_id=0 BLOCKING=0
+[  +0.000001] CTX[WR]: gsi_dev_enqueue_task: [amount 1] 
+[  +0.000000] CTX[WR]: gsi_dev_enqueue_task: [1#1] 
+[  +0.000007] CTX[WR]: gsi_dev_enqueue_task: [1#1] Task_ID[5]
+[  +0.000000] CTX[WR]: doorbell GSI_PLUGIN_USR_TASK_READY [pid=26690] apu/ctx/d0100c00: after gsi_dev_enqueue_task len=120  amount=1 written=120
+[  +0.000001] [H2D]: gsi_pci_dev_hst2dev_cb(irq=3,value=0)
+[  +0.000000] gsi_send_doorbell_event(db=0,ev_id=3,ev_val=0)
+[Nov24 03:59] [D2H]: gsi_generic_dev2hst_irq_handler: IRQ = 128 ISR=3
+[  +0.000000] gsi_common_dev2hst_cb: enter event=3 dev_id=256
+[  +0.000001] gsi_common_dev2hst_cb: GSI_PLUGIN_USR_TASK_CLEAR
+[  +0.000000] gsi_common_dev2hst_cb: wake_up_interruptible_sync
+[  +0.000002] gsi_common_dev2hst_cb: Done !!
+[  +0.000008] [D2H]: gsi_generic_dev2hst_irq_handler: IRQ = 128 ISR=3
+[  +0.000001] gsi_common_dev2hst_cb: enter event=3 dev_id=256
+[  +0.000000] gsi_common_dev2hst_cb: GSI_PLUGIN_USR_TASK_CLEAR
+[  +0.000000] gsi_common_dev2hst_cb: wake_up_interruptible_sync
+[  +0.000000] gsi_common_dev2hst_cb: Done !!
+[  +0.000022] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLOUT
+[  +0.000001] POLL: gsi_ctx_dev_poll: Done !!
+[  +0.000027] [D2H]: gsi_generic_dev2hst_irq_handler: IRQ = 128 ISR=3
+[  +0.000001] gsi_common_dev2hst_cb: enter event=3 dev_id=256
+[  +0.000000] gsi_common_dev2hst_cb: GSI_PLUGIN_USR_TASK_CLEAR
+[  +0.000000] gsi_common_dev2hst_cb: wake_up_interruptible_sync
+[  +0.000002] gsi_common_dev2hst_cb: Done !!
+[  +0.000012] [D2H]: gsi_generic_dev2hst_irq_handler: IRQ = 128 ISR=3
+[  +0.000001] gsi_common_dev2hst_cb: enter event=3 dev_id=256
+[  +0.000000] gsi_common_dev2hst_cb: GSI_PLUGIN_USR_TASK_CLEAR
+[  +0.000000] gsi_common_dev2hst_cb: wake_up_interruptible_sync
+[  +0.000000] gsi_common_dev2hst_cb: Done !!
+[  +0.000031] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000001] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[  +0.000022] [D2H]: gsi_generic_dev2hst_irq_handler: IRQ = 128 ISR=3
+[  +0.000000] gsi_common_dev2hst_cb: enter event=3 dev_id=256
+[  +0.000000] gsi_common_dev2hst_cb: GSI_PLUGIN_USR_TASK_CLEAR
+[  +0.000000] gsi_common_dev2hst_cb: wake_up_interruptible_sync
+[  +0.000002] gsi_common_dev2hst_cb: Done !!
+[  +0.000005] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLOUT
+[  +0.000001] POLL: gsi_ctx_dev_poll: Done !!
+[Nov24 03:59] [D2H]: gsi_generic_dev2hst_irq_handler: IRQ = 129 ISR=4
+[  +0.000001] gsi_common_dev2hst_cb: enter event=4 dev_id=256
+[  +0.000000] gsi_common_dev2hst_cb: GSI_PLUGIN_USR_TASK_COMP_READY
+[  +0.000000] gsi_common_dev2hst_cb: flush_work
+[  +0.000001] gsi_common_dev2hst_cb: queue_work
+[  +0.000002] gsi_common_dev2hst_cb: Done !!
+[  +0.000024] [D2H]: gsi_generic_dev2hst_irq_handler: IRQ = 128 ISR=3
+[  +0.000001] gsi_common_dev2hst_cb: enter event=3 dev_id=256
+[  +0.000000] gsi_common_dev2hst_cb: GSI_PLUGIN_USR_TASK_CLEAR
+[  +0.000000] gsi_common_dev2hst_cb: wake_up_interruptible_sync
+[  +0.000002] gsi_common_dev2hst_cb: Done !!
+[  +0.000012] COMP[prop]: gsi_usr_compq_func: start handling compq fifo [pending 1]
+[  +0.000016] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[  +0.000064] COMP[prop]: dequeue: ctx[ctx=0,task=5]  enqueue into ctx00@0x0000000002a50030
+[  +0.000020] COMP[prop]: gsi_usr_compq_func: wakeup on 1 msgs
+[  +0.000002] [H2D]: gsi_pci_dev_hst2dev_cb(irq=3,value=255)
+[  +0.000001] gsi_send_doorbell_event(db=0,ev_id=3,ev_val=255)
+[  +0.000000] COMP[prop]: gsi_usr_compq_func: Done !!
+[  +0.000020] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLIN
+[  +0.000000] POLL: set POLLOUT
+[  +0.000001] POLL: gsi_ctx_dev_poll: Done !!
+[  +0.000021] CTX[RD]: apu/ctx/d0100c00: (len=32/rec_sz=32)=1 dev_id=256 ctx_id=0
+[  +0.000001] CTX[RD]: copied to user task_id=5
+[  +0.000005] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[  +0.000132] CTX[WR]: [pid=26690] apu/ctx/d0100c00: amount[4]=480/120 offset=0x00000000c067d852 dev_id=256 ctx_id=0 BLOCKING=0
+[  +0.000001] CTX[WR]: gsi_dev_enqueue_task: [amount 4] 
+[  +0.000000] CTX[WR]: gsi_dev_enqueue_task: [1#4] 
+[  +0.000008] CTX[WR]: gsi_dev_enqueue_task: [1#4] Task_ID[6]
+[  +0.000000] CTX[WR]: gsi_dev_enqueue_task: [2#4] 
+[  +0.000008] CTX[WR]: gsi_dev_enqueue_task: [2#4] Task_ID[7]
+[  +0.000000] CTX[WR]: gsi_dev_enqueue_task: [3#4] 
+[  +0.000007] CTX[WR]: gsi_dev_enqueue_task: [3#4] Task_ID[8]
+[  +0.000001] CTX[WR]: gsi_dev_enqueue_task: [4#4] 
+[  +0.000007] CTX[WR]: gsi_dev_enqueue_task: [4#4] Task_ID[9]
+[  +0.000019] CTX[WR]: doorbell GSI_PLUGIN_USR_TASK_READY [pid=26690] apu/ctx/d0100c00: after gsi_dev_enqueue_task len=480  amount=4 written=480
+[  +0.000001] [H2D]: gsi_pci_dev_hst2dev_cb(irq=3,value=0)
+[  +0.000000] gsi_send_doorbell_event(db=0,ev_id=3,ev_val=0)
+[  +0.000001] CTX[WR]: [pid=26690] apu/ctx/d0100c00: amount[1]=120/120 offset=0x00000000c067d852 dev_id=256 ctx_id=0 BLOCKING=0
+[  +0.000001] CTX[WR]: gsi_dev_enqueue_task: [amount 1] 
+[  +0.000000] CTX[WR]: gsi_dev_enqueue_task: [1#1] 
+[  +0.000007] CTX[WR]: gsi_dev_enqueue_task: [1#1] Task_ID[10]
+[  +0.000001] CTX[WR]: doorbell GSI_PLUGIN_USR_TASK_READY [pid=26690] apu/ctx/d0100c00: after gsi_dev_enqueue_task len=120  amount=1 written=120
+[  +0.000000] [H2D]: gsi_pci_dev_hst2dev_cb(irq=3,value=0)
+[  +0.000001] gsi_send_doorbell_event(db=0,ev_id=3,ev_val=0)
+[Nov24 03:59] [D2H]: gsi_generic_dev2hst_irq_handler: IRQ = 128 ISR=3
+[  +0.000001] gsi_common_dev2hst_cb: enter event=3 dev_id=256
+[  +0.000001] gsi_common_dev2hst_cb: GSI_PLUGIN_USR_TASK_CLEAR
+[  +0.000000] gsi_common_dev2hst_cb: wake_up_interruptible_sync
+[  +0.000002] gsi_common_dev2hst_cb: Done !!
+[  +0.000004] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000001] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[  +0.000012] [D2H]: gsi_generic_dev2hst_irq_handler: IRQ = 128 ISR=3
+[  +0.000001] gsi_common_dev2hst_cb: enter event=3 dev_id=256
+[  +0.000000] gsi_common_dev2hst_cb: GSI_PLUGIN_USR_TASK_CLEAR
+[  +0.000000] gsi_common_dev2hst_cb: wake_up_interruptible_sync
+[  +0.000001] gsi_common_dev2hst_cb: Done !!
+[  +0.000001] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[  +0.000008] [D2H]: gsi_generic_dev2hst_irq_handler: IRQ = 128 ISR=3
+[  +0.000001] gsi_common_dev2hst_cb: enter event=3 dev_id=256
+[  +0.000000] gsi_common_dev2hst_cb: GSI_PLUGIN_USR_TASK_CLEAR
+[  +0.000000] gsi_common_dev2hst_cb: wake_up_interruptible_sync
+[  +0.000001] gsi_common_dev2hst_cb: Done !!
+[  +0.000001] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLOUT
+[  +0.000001] POLL: gsi_ctx_dev_poll: Done !!
+[  +0.000043] [D2H]: gsi_generic_dev2hst_irq_handler: IRQ = 128 ISR=3
+[  +0.000001] gsi_common_dev2hst_cb: enter event=3 dev_id=256
+[  +0.000000] gsi_common_dev2hst_cb: GSI_PLUGIN_USR_TASK_CLEAR
+[  +0.000000] gsi_common_dev2hst_cb: wake_up_interruptible_sync
+[  +0.000002] gsi_common_dev2hst_cb: Done !!
+[  +0.000002] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[Nov24 03:59] [D2H]: gsi_generic_dev2hst_irq_handler: IRQ = 129 ISR=4
+[  +0.000002] gsi_common_dev2hst_cb: enter event=4 dev_id=256
+[  +0.000001] gsi_common_dev2hst_cb: GSI_PLUGIN_USR_TASK_COMP_READY
+[  +0.000000] gsi_common_dev2hst_cb: flush_work
+[  +0.000001] gsi_common_dev2hst_cb: queue_work
+[  +0.000002] gsi_common_dev2hst_cb: Done !!
+[  +0.000022] [D2H]: gsi_generic_dev2hst_irq_handler: IRQ = 128 ISR=3
+[  +0.000001] gsi_common_dev2hst_cb: enter event=3 dev_id=256
+[  +0.000000] gsi_common_dev2hst_cb: GSI_PLUGIN_USR_TASK_CLEAR
+[  +0.000000] gsi_common_dev2hst_cb: wake_up_interruptible_sync
+[  +0.000003] gsi_common_dev2hst_cb: Done !!
+[  +0.000003] COMP[prop]: gsi_usr_compq_func: start handling compq fifo [pending 1]
+[  +0.000030] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000001] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[  +0.000009] COMP[prop]: dequeue: ctx[ctx=0,task=10]  enqueue into ctx00@0x0000000002a50030
+[  +0.000001] COMP[prop]: gsi_usr_compq_func: wakeup on 1 msgs
+[  +0.000002] [H2D]: gsi_pci_dev_hst2dev_cb(irq=3,value=255)
+[  +0.000000] gsi_send_doorbell_event(db=0,ev_id=3,ev_val=255)
+[  +0.000001] COMP[prop]: gsi_usr_compq_func: Done !!
+[  +0.000097] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLIN
+[  +0.000001] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[  +0.000004] CTX[RD]: apu/ctx/d0100c00: (len=32/rec_sz=32)=1 dev_id=256 ctx_id=0
+[  +0.000000] CTX[RD]: copied to user task_id=10
+[  +0.000007] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[Nov24 03:59] CTX[WR]: [pid=26690] apu/ctx/d0100c00: amount[1]=120/120 offset=0x00000000c067d852 dev_id=256 ctx_id=0 BLOCKING=0
+[  +0.000000] CTX[WR]: gsi_dev_enqueue_task: [amount 1] 
+[  +0.000001] CTX[WR]: gsi_dev_enqueue_task: [1#1] 
+[  +0.000007] CTX[WR]: gsi_dev_enqueue_task: [1#1] Task_ID[11]
+[  +0.000001] CTX[WR]: doorbell GSI_PLUGIN_USR_TASK_READY [pid=26690] apu/ctx/d0100c00: after gsi_dev_enqueue_task len=120  amount=1 written=120
+[  +0.000000] [H2D]: gsi_pci_dev_hst2dev_cb(irq=3,value=0)
+[  +0.000001] gsi_send_doorbell_event(db=0,ev_id=3,ev_val=0)
+[  +0.000001] CTX[WR]: [pid=26690] apu/ctx/d0100c00: amount[1]=120/120 offset=0x00000000c067d852 dev_id=256 ctx_id=0 BLOCKING=0
+[  +0.000000] CTX[WR]: gsi_dev_enqueue_task: [amount 1] 
+[  +0.000000] CTX[WR]: gsi_dev_enqueue_task: [1#1] 
+[  +0.000008] CTX[WR]: gsi_dev_enqueue_task: [1#1] Task_ID[12]
+[  +0.000001] CTX[WR]: doorbell GSI_PLUGIN_USR_TASK_READY [pid=26690] apu/ctx/d0100c00: after gsi_dev_enqueue_task len=120  amount=1 written=120
+[  +0.000000] [H2D]: gsi_pci_dev_hst2dev_cb(irq=3,value=0)
+[  +0.000000] gsi_send_doorbell_event(db=0,ev_id=3,ev_val=0)
+[Nov24 03:59] [D2H]: gsi_generic_dev2hst_irq_handler: IRQ = 128 ISR=3
+[  +0.000002] gsi_common_dev2hst_cb: enter event=3 dev_id=256
+[  +0.000000] gsi_common_dev2hst_cb: GSI_PLUGIN_USR_TASK_CLEAR
+[  +0.000000] gsi_common_dev2hst_cb: wake_up_interruptible_sync
+[  +0.000003] gsi_common_dev2hst_cb: Done !!
+[  +0.000001] [D2H]: gsi_generic_dev2hst_irq_handler: IRQ = 128 ISR=3
+[  +0.000000] gsi_common_dev2hst_cb: enter event=3 dev_id=256
+[  +0.000000] gsi_common_dev2hst_cb: GSI_PLUGIN_USR_TASK_CLEAR
+[  +0.000000] gsi_common_dev2hst_cb: wake_up_interruptible_sync
+[  +0.000000] gsi_common_dev2hst_cb: Done !!
+[  +0.000032] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000001] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[  +0.000028] [D2H]: gsi_generic_dev2hst_irq_handler: IRQ = 128 ISR=3
+[  +0.000000] gsi_common_dev2hst_cb: enter event=3 dev_id=256
+[  +0.000000] gsi_common_dev2hst_cb: GSI_PLUGIN_USR_TASK_CLEAR
+[  +0.000001] gsi_common_dev2hst_cb: wake_up_interruptible_sync
+[  +0.000001] gsi_common_dev2hst_cb: Done !!
+[  +0.000032] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLOUT
+[  +0.000001] POLL: gsi_ctx_dev_poll: Done !!
+[Nov24 03:59] [D2H]: gsi_generic_dev2hst_irq_handler: IRQ = 129 ISR=4
+[  +0.000001] gsi_common_dev2hst_cb: enter event=4 dev_id=256
+[  +0.000000] gsi_common_dev2hst_cb: GSI_PLUGIN_USR_TASK_COMP_READY
+[  +0.000001] gsi_common_dev2hst_cb: flush_work
+[  +0.000000] gsi_common_dev2hst_cb: queue_work
+[  +0.000002] gsi_common_dev2hst_cb: Done !!
+[  +0.000033] COMP[prop]: gsi_usr_compq_func: start handling compq fifo [pending 1]
+[  +0.000009] [D2H]: gsi_generic_dev2hst_irq_handler: IRQ = 128 ISR=3
+[  +0.000001] gsi_common_dev2hst_cb: enter event=3 dev_id=256
+[  +0.000000] gsi_common_dev2hst_cb: GSI_PLUGIN_USR_TASK_CLEAR
+[  +0.000000] gsi_common_dev2hst_cb: wake_up_interruptible_sync
+[  +0.000003] gsi_common_dev2hst_cb: Done !!
+[  +0.000020] COMP[prop]: dequeue: ctx[ctx=0,task=12]  enqueue into ctx00@0x0000000002a50030
+[  +0.000001] COMP[prop]: gsi_usr_compq_func: wakeup on 1 msgs
+[  +0.000001] [H2D]: gsi_pci_dev_hst2dev_cb(irq=3,value=255)
+[  +0.000000] gsi_send_doorbell_event(db=0,ev_id=3,ev_val=255)
+[  +0.000001] COMP[prop]: gsi_usr_compq_func: Done !!
+[  +0.000008] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000001] POLL: set POLLIN
+[  +0.000000] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[  +0.000004] CTX[RD]: apu/ctx/d0100c00: (len=32/rec_sz=32)=1 dev_id=256 ctx_id=0
+[  +0.000000] CTX[RD]: copied to user task_id=12
+[  +0.000006] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[Nov24 03:59] [D2H]: gsi_generic_dev2hst_irq_handler: IRQ = 128 ISR=3
+[  +0.000002] gsi_common_dev2hst_cb: enter event=3 dev_id=256
+[  +0.000001] gsi_common_dev2hst_cb: GSI_PLUGIN_USR_TASK_CLEAR
+[  +0.000000] gsi_common_dev2hst_cb: wake_up_interruptible_sync
+[  +0.000003] gsi_common_dev2hst_cb: Done !!
+[  +0.000033] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000001] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[Nov24 03:59] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLOUT
+[  +0.000001] POLL: gsi_ctx_dev_poll: Done !!
+[  +0.000002] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[Nov24 03:59] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[  +0.000004] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[Nov24 03:59] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLOUT
+[  +0.000001] POLL: gsi_ctx_dev_poll: Done !!
+[  +0.000002] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000001] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[Nov24 03:59] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000001] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[  +0.000003] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[Nov24 03:59] No dma channel. skipping operation
+[Nov24 03:59] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLOUT
+[  +0.000001] POLL: gsi_ctx_dev_poll: Done !!
+[  +0.000002] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLOUT
+[  +0.000001] POLL: gsi_ctx_dev_poll: Done !!
+[Nov24 03:59] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000001] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[  +0.000003] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLOUT
+[  +0.000001] POLL: gsi_ctx_dev_poll: Done !!
+[Nov24 03:59] No dma channel. skipping operation
+[Nov24 03:59] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000018] POLL: set POLLOUT
+[  +0.000001] POLL: gsi_ctx_dev_poll: Done !!
+[  +0.000002] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[Nov24 03:59] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000001] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[  +0.000003] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000000] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[Nov24 03:59] POLL: gsi_ctx_dev_poll: dev_id=256 ctx_id=0
+[  +0.000001] POLL: set POLLOUT
+[  +0.000000] POLL: gsi_ctx_dev_poll: Done !!
+[Nov24 03:59] CTX[0]: Device closed

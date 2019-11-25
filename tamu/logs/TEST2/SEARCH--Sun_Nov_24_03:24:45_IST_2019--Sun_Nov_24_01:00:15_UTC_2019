@@ -1,0 +1,168 @@
+pc date=Sun_Nov_24_03:24:45_IST_2019
+board date=Sun_Nov_24_01:00:15_UTC_2019
+PARAMETERS: 10000 192.168.32.4 TEST2
+before gnl setup
+1
+2
+3
+4
+5
+6
+after gnl setup
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.141586065292358
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.146986961364746
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.144485235214233
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.136011123657227
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.136068820953369
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.136973857879639
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.137413263320923
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.141814231872559
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.1421778202056885
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.134170055389404
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.137552499771118
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.139942169189453
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.138251543045044
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.139360427856445
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.142747402191162
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.135899782180786
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.135876893997192
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.137113571166992
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.1454689502716064
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.139626979827881
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.135023593902588
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.1421918869018555
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.140520811080933
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.141472578048706
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.133009672164917
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.1396965980529785
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.158320665359497
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.138068199157715
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.138411521911621
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.1477251052856445
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.14262843132019
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.142739772796631
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.1474103927612305
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.137289762496948
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.141862154006958
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.136117935180664
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.147228002548218
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.133296966552734
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.142502546310425
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.148279428482056
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.1354241371154785
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.141727924346924
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.144325017929077
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.1387248039245605
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.135405540466309
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.138684511184692
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.145802736282349
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.141088247299194
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.134301662445068
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.144266128540039
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.145157337188721
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.146114826202393
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.1346118450164795
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.13723087310791
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.1446123123168945
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.140195369720459
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.137746334075928
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.138221263885498
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.145815372467041
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.13376784324646
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.156489849090576
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.140021324157715
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.142839193344116
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.140610694885254
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.144662618637085
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.15294623374939
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.135181427001953
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.135711193084717
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.141700983047485
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.141479969024658
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.1358325481414795
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.147165775299072
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.142618894577026
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.136240720748901
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.138463735580444
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.139301538467407
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.136756658554077
+searching knn_hamming !!!!!!!!!!!
+ search duration: 4.14016318321228
+searching knn_hamming !!!!!!!!!!!

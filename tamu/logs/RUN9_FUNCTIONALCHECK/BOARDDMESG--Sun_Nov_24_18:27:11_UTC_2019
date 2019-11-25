@@ -1,0 +1,1444 @@
+UPTIME= 18:27:11 up 1 min,  load average: 0.08, 0.03, 0.01
+PARAMETERS: RUN9_FUNCTIONALCHECK
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 4.14.0-xilinx-v2018.2 (oe-user@oe-host) (gcc version 7.2.0 (GCC)) #1 SMP Mon Jul 1 23:44:30 IDT 2019
+[    0.000000] Boot CPU: AArch64 Processor [410fd034]
+[    0.000000] Machine model: xlnx,zynqmp
+[    0.000000] earlycon: cdns0 at MMIO 0x00000000ff000000 (options '115200n8')
+[    0.000000] bootconsole [cdns0] enabled
+[    0.000000] efi: Getting EFI parameters from FDT:
+[    0.000000] efi: UEFI not found.
+[    0.000000] cma: Reserved 256 MiB at 0x000000002ec00000
+[    0.000000] On node 0 totalpages: 258048
+[    0.000000]   DMA zone: 3584 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 258048 pages, LIFO batch:31
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] percpu: Embedded 21 pages/cpu @ffffffc03ff70000 s46488 r8192 d31336 u86016
+[    0.000000] pcpu-alloc: s46488 r8192 d31336 u86016 alloc=21*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: enabling workaround for ARM erratum 845719
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 254464
+[    0.000000] Kernel command line: earlycon clk_ignore_unused cpuidle.off=1 earlyprintk
+[    0.000000] PID hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.000000] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes)
+[    0.000000] Memory: 687708K/1032192K available (9980K kernel code, 644K rwdata, 3128K rodata, 512K init, 2168K bss, 82340K reserved, 262144K cma-reserved)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     modules : 0xffffff8000000000 - 0xffffff8008000000   (   128 MB)
+[    0.000000]     vmalloc : 0xffffff8008000000 - 0xffffffbebfff0000   (   250 GB)
+[    0.000000]       .text : 0xffffff8008080000 - 0xffffff8008a40000   (  9984 KB)
+[    0.000000]     .rodata : 0xffffff8008a40000 - 0xffffff8008d60000   (  3200 KB)
+[    0.000000]       .init : 0xffffff8008d60000 - 0xffffff8008de0000   (   512 KB)
+[    0.000000]       .data : 0xffffff8008de0000 - 0xffffff8008e81200   (   645 KB)
+[    0.000000]        .bss : 0xffffff8008e81200 - 0xffffff800909f2b0   (  2169 KB)
+[    0.000000]     fixed   : 0xffffffbefe7fd000 - 0xffffffbefec00000   (  4108 KB)
+[    0.000000]     PCI I/O : 0xffffffbefee00000 - 0xffffffbeffe00000   (    16 MB)
+[    0.000000]     vmemmap : 0xffffffbf00000000 - 0xffffffc000000000   (     4 GB maximum)
+[    0.000000]               0xffffffbf00000000 - 0xffffffbf00e00000   (    14 MB actual)
+[    0.000000]     memory  : 0xffffffc000000000 - 0xffffffc040000000   (  1024 MB)
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] 	RCU event tracing is enabled.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=4.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] GIC: Adjusting CPU interface base to 0x00000000f902f000
+[    0.000000] GIC: Using split EOI/Deactivate mode
+[    0.000000] arch_timer: cp15 timer(s) running at 100.00MHz (phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x171024e7e0, max_idle_ns: 440795205315 ns
+[    0.000003] sched_clock: 56 bits at 100MHz, resolution 10ns, wraps every 4398046511100ns
+[    0.008355] Console: colour dummy device 80x25
+[    0.012610] console [tty0] enabled
+[    0.015976] bootconsole [cdns0] disabled
+[    0.019885] Calibrating delay loop (skipped), value calculated using timer frequency.. 200.00 BogoMIPS (lpj=400000)
+[    0.019899] pid_max: default: 32768 minimum: 301
+[    0.019998] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes)
+[    0.020009] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes)
+[    0.020597] ASID allocator initialised with 65536 entries
+[    0.020650] Hierarchical SRCU implementation.
+[    0.020950] EFI services will not be available.
+[    0.020976] zynqmp_plat_init Platform Management API v1.0
+[    0.020984] zynqmp_plat_init Trustzone version v1.0
+[    0.021082] smp: Bringing up secondary CPUs ...
+[    0.021332] Detected VIPT I-cache on CPU1
+[    0.021360] CPU1: Booted secondary processor [410fd034]
+[    0.021635] Detected VIPT I-cache on CPU2
+[    0.021653] CPU2: Booted secondary processor [410fd034]
+[    0.021913] Detected VIPT I-cache on CPU3
+[    0.021931] CPU3: Booted secondary processor [410fd034]
+[    0.021972] smp: Brought up 1 node, 4 CPUs
+[    0.022004] SMP: Total of 4 processors activated.
+[    0.022012] CPU features: detected feature: 32-bit EL0 Support
+[    0.022023] CPU: All CPU(s) started at EL2
+[    0.022039] alternatives: patching kernel code
+[    0.022529] devtmpfs: initialized
+[    0.026382] random: get_random_u32 called from bucket_table_alloc+0x108/0x260 with crng_init=0
+[    0.026573] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.026591] futex hash table entries: 1024 (order: 5, 131072 bytes)
+[    0.032003] xor: measuring software checksum speed
+[    0.071968]    8regs     :  2303.000 MB/sec
+[    0.111999]    8regs_prefetch:  2053.000 MB/sec
+[    0.152030]    32regs    :  2830.000 MB/sec
+[    0.192062]    32regs_prefetch:  2379.000 MB/sec
+[    0.192070] xor: using function: 32regs (2830.000 MB/sec)
+[    0.192140] pinctrl core: initialized pinctrl subsystem
+[    0.192240] random: fast init done
+[    0.192640] NET: Registered protocol family 16
+[    0.193565] vdso: 2 pages (1 code @ ffffff8008a46000, 1 data @ ffffff8008de4000)
+[    0.193583] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.194315] DMA: preallocated 256 KiB pool for atomic allocations
+[    0.223976] reset_zynqmp reset-controller: Xilinx zynqmp reset driver probed
+[    0.224545] ARM CCI_400_r1 PMU driver probed
+[    0.228988] zynqmp-pinctrl ff180000.pinctrl: zynqmp pinctrl initialized
+[    0.237631] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.304330] raid6: int64x1  gen()   403 MB/s
+[    0.372253] raid6: int64x1  xor()   445 MB/s
+[    0.440328] raid6: int64x2  gen()   688 MB/s
+[    0.508370] raid6: int64x2  xor()   603 MB/s
+[    0.576390] raid6: int64x4  gen()  1042 MB/s
+[    0.644448] raid6: int64x4  xor()   742 MB/s
+[    0.712523] raid6: int64x8  gen()   980 MB/s
+[    0.780532] raid6: int64x8  xor()   745 MB/s
+[    0.848593] raid6: neonx1   gen()   726 MB/s
+[    0.916634] raid6: neonx1   xor()   853 MB/s
+[    0.984698] raid6: neonx2   gen()  1169 MB/s
+[    1.052737] raid6: neonx2   xor()  1205 MB/s
+[    1.120802] raid6: neonx4   gen()  1505 MB/s
+[    1.188822] raid6: neonx4   xor()  1441 MB/s
+[    1.256878] raid6: neonx8   gen()  1651 MB/s
+[    1.324938] raid6: neonx8   xor()  1533 MB/s
+[    1.324946] raid6: using algorithm neonx8 gen() 1651 MB/s
+[    1.324953] raid6: .... xor() 1533 MB/s, rmw enabled
+[    1.324961] raid6: using neon recovery algorithm
+[    1.325886] SCSI subsystem initialized
+[    1.325924] libata version 3.00 loaded.
+[    1.326052] usbcore: registered new interface driver usbfs
+[    1.326089] usbcore: registered new interface driver hub
+[    1.326128] usbcore: registered new device driver usb
+[    1.326188] media: Linux media interface: v0.10
+[    1.326216] Linux video capture interface: v2.00
+[    1.326255] pps_core: LinuxPPS API ver. 1 registered
+[    1.326263] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    1.326283] PTP clock support registered
+[    1.326308] EDAC MC: Ver: 3.0.0
+[    1.326615] zynqmp-ipi ff9905c0.mailbox: Probed ZynqMP IPI Mailbox driver.
+[    1.326773] FPGA manager framework
+[    1.326874] fpga-region fpga-full: FPGA Region probed
+[    1.326974] Advanced Linux Sound Architecture Driver Initialized.
+[    1.327224] Bluetooth: Core ver 2.22
+[    1.327252] NET: Registered protocol family 31
+[    1.327260] Bluetooth: HCI device and connection manager initialized
+[    1.327272] Bluetooth: HCI socket layer initialized
+[    1.327282] Bluetooth: L2CAP socket layer initialized
+[    1.327303] Bluetooth: SCO socket layer initialized
+[    1.327811] clocksource: Switched to clocksource arch_sys_counter
+[    1.327887] VFS: Disk quotas dquot_6.6.0
+[    1.327931] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    1.331903] NET: Registered protocol family 2
+[    1.332192] TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+[    1.332256] TCP bind hash table entries: 8192 (order: 5, 131072 bytes)
+[    1.332359] TCP: Hash tables configured (established 8192 bind 8192)
+[    1.332429] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    1.332456] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    1.332556] NET: Registered protocol family 1
+[    1.332736] RPC: Registered named UNIX socket transport module.
+[    1.332746] RPC: Registered udp transport module.
+[    1.332753] RPC: Registered tcp transport module.
+[    1.332760] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    1.332772] PCI: CLS 0 bytes, default 128
+[    1.332852] Trying to unpack rootfs image as initramfs...
+[    3.483775] Freeing initrd memory: 49284K
+[    3.484152] hw perfevents: no interrupt-affinity property for /pmu, guessing.
+[    3.484306] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[    3.485035] audit: initializing netlink subsys (disabled)
+[    3.485114] audit: type=2000 audit(3.472:1): state=initialized audit_enabled=0 res=1
+[    3.485433] workingset: timestamp_bits=62 max_order=18 bucket_order=0
+[    3.486118] NFS: Registering the id_resolver key type
+[    3.486139] Key type id_resolver registered
+[    3.486147] Key type id_legacy registered
+[    3.486159] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    3.486179] jffs2: version 2.2. (NAND) (SUMMARY)  © 2001-2006 Red Hat, Inc.
+[    3.512387] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 246)
+[    3.512409] io scheduler noop registered
+[    3.512417] io scheduler deadline registered
+[    3.512438] io scheduler cfq registered (default)
+[    3.512446] io scheduler mq-deadline registered
+[    3.512454] io scheduler kyber registered
+[    3.513743] xilinx-dpdma fd4c0000.dma: Xilinx DPDMA engine is probed
+[    3.514172] xilinx-zynqmp-dma fd500000.dma: ZynqMP DMA driver Probe success
+[    3.514317] xilinx-zynqmp-dma fd510000.dma: ZynqMP DMA driver Probe success
+[    3.514463] xilinx-zynqmp-dma fd520000.dma: ZynqMP DMA driver Probe success
+[    3.514607] xilinx-zynqmp-dma fd530000.dma: ZynqMP DMA driver Probe success
+[    3.514752] xilinx-zynqmp-dma fd540000.dma: ZynqMP DMA driver Probe success
+[    3.514895] xilinx-zynqmp-dma fd550000.dma: ZynqMP DMA driver Probe success
+[    3.515042] xilinx-zynqmp-dma fd560000.dma: ZynqMP DMA driver Probe success
+[    3.515185] xilinx-zynqmp-dma fd570000.dma: ZynqMP DMA driver Probe success
+[    3.515399] xilinx-zynqmp-dma ffa80000.dma: ZynqMP DMA driver Probe success
+[    3.515540] xilinx-zynqmp-dma ffa90000.dma: ZynqMP DMA driver Probe success
+[    3.515686] xilinx-zynqmp-dma ffaa0000.dma: ZynqMP DMA driver Probe success
+[    3.515856] xilinx-zynqmp-dma ffab0000.dma: ZynqMP DMA driver Probe success
+[    3.516002] xilinx-zynqmp-dma ffac0000.dma: ZynqMP DMA driver Probe success
+[    3.516158] xilinx-zynqmp-dma ffad0000.dma: ZynqMP DMA driver Probe success
+[    3.516299] xilinx-zynqmp-dma ffae0000.dma: ZynqMP DMA driver Probe success
+[    3.516444] xilinx-zynqmp-dma ffaf0000.dma: ZynqMP DMA driver Probe success
+[    3.541397] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    3.544800] cacheinfo: Unable to detect cache hierarchy for CPU 0
+[    3.548985] brd: module loaded
+[    3.552380] loop: module loaded
+[    3.563373] ahci-ceva fd0c0000.ahci: AHCI 0001.0301 32 slots 2 ports 6 Gbps 0x3 impl platform mode
+[    3.563393] ahci-ceva fd0c0000.ahci: flags: 64bit ncq sntf pm clo only pmp fbs pio slum part ccc sds apst 
+[    3.564351] scsi host0: ahci-ceva
+[    3.564565] scsi host1: ahci-ceva
+[    3.564677] ata1: SATA max UDMA/133 mmio [mem 0xfd0c0000-0xfd0c1fff] port 0x100 irq 38
+[    3.564689] ata2: SATA max UDMA/133 mmio [mem 0xfd0c0000-0xfd0c1fff] port 0x180 irq 38
+[    3.564869] mtdoops: mtd device (mtddev=name/number) must be supplied
+[    3.566221] m25p80 spi0.0: n25q512a (131072 Kbytes)
+[    3.566244] 3 ofpart partitions found on MTD device spi0.0
+[    3.566253] Creating 3 MTD partitions on "spi0.0":
+[    3.566264] 0x000000000000-0x000000100000 : "boot"
+[    3.566709] 0x000000100000-0x000000140000 : "bootenv"
+[    3.567088] 0x000000140000-0x000001740000 : "kernel"
+[    3.568375] libphy: Fixed MDIO Bus: probed
+[    3.569412] tun: Universal TUN/TAP device driver, 1.6
+[    3.569546] CAN device driver interface
+[    3.570604] macb ff0e0000.ethernet: Not enabling partial store and forward
+[    3.570964] libphy: MACB_mii_bus: probed
+[    3.644500] macb ff0e0000.ethernet eth0: Cadence GEM rev 0x50070106 at 0xff0e0000 irq 31 (00:0a:35:00:ed:ef)
+[    3.644524] Micrel KSZ9031 Gigabit PHY ff0e0000.ethernet-ffffffff:03: attached PHY driver [Micrel KSZ9031 Gigabit PHY] (mii_bus:phy_addr=ff0e0000.ethernet-ffffffff:03, irq=POLL)
+[    3.645225] usbcore: registered new interface driver asix
+[    3.645281] usbcore: registered new interface driver ax88179_178a
+[    3.645311] usbcore: registered new interface driver cdc_ether
+[    3.645342] usbcore: registered new interface driver net1080
+[    3.645372] usbcore: registered new interface driver cdc_subset
+[    3.645402] usbcore: registered new interface driver zaurus
+[    3.645443] usbcore: registered new interface driver cdc_ncm
+[    3.645738] xilinx-axipmon ffa00000.perf-monitor: Probed Xilinx APM
+[    3.646009] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    3.646019] ehci-pci: EHCI PCI platform driver
+[    3.646308] usbcore: registered new interface driver uas
+[    3.646347] usbcore: registered new interface driver usb-storage
+[    3.646827] rtc_zynqmp ffa60000.rtc: rtc core: registered ffa60000.rtc as rtc0
+[    3.646888] i2c /dev entries driver
+[    3.647134] IR NEC protocol handler initialized
+[    3.647142] IR RC5(x/sz) protocol handler initialized
+[    3.647150] IR RC6 protocol handler initialized
+[    3.647157] IR JVC protocol handler initialized
+[    3.647164] IR Sony protocol handler initialized
+[    3.647171] IR SANYO protocol handler initialized
+[    3.647177] IR Sharp protocol handler initialized
+[    3.647185] IR MCE Keyboard/mouse protocol handler initialized
+[    3.647192] IR XMP protocol handler initialized
+[    3.648302] usbcore: registered new interface driver uvcvideo
+[    3.648311] USB Video Class driver (1.1.1)
+[    3.648770] cdns-wdt fd4d0000.watchdog: Xilinx Watchdog Timer at ffffff8009125000 with timeout 10s
+[    3.648962] Bluetooth: HCI UART driver ver 2.3
+[    3.648972] Bluetooth: HCI UART protocol H4 registered
+[    3.648980] Bluetooth: HCI UART protocol BCSP registered
+[    3.649008] Bluetooth: HCI UART protocol LL registered
+[    3.649016] Bluetooth: HCI UART protocol ATH3K registered
+[    3.649024] Bluetooth: HCI UART protocol Three-wire (H5) registered
+[    3.649067] Bluetooth: HCI UART protocol Intel registered
+[    3.649075] Bluetooth: HCI UART protocol QCA registered
+[    3.649118] usbcore: registered new interface driver bcm203x
+[    3.649151] usbcore: registered new interface driver bpa10x
+[    3.649184] usbcore: registered new interface driver bfusb
+[    3.649219] usbcore: registered new interface driver btusb
+[    3.649228] Bluetooth: Generic Bluetooth SDIO driver ver 0.1
+[    3.649277] usbcore: registered new interface driver ath3k
+[    3.649404] EDAC MC: ECC not enabled
+[    3.649603] EDAC DEVICE0: Giving out device to module zynqmp-ocm-edac controller zynqmp_ocm: DEV ff960000.memory-controller (INTERRUPT)
+[    3.650081] cpufreq: cpufreq_online: CPU0: Running at unlisted freq: 1200000 KHz
+[    3.650103] cpu cpu0: dev_pm_opp_set_rate: failed to find current OPP for freq 1200000000 (-34)
+[    3.650152] cpufreq: cpufreq_online: CPU0: Unlisted initial frequency changed to: 1199999 KHz
+[    3.650180] cpu cpu0: dev_pm_opp_set_rate: failed to find current OPP for freq 1200000000 (-34)
+[    3.650247] CPUidle arm: Failed to register cpuidle driver
+[    3.650405] sdhci: Secure Digital Host Controller Interface driver
+[    3.650414] sdhci: Copyright(c) Pierre Ossman
+[    3.650420] sdhci-pltfm: SDHCI platform and OF driver helper
+[    3.695817] mmc0: SDHCI controller on ff160000.sdhci [ff160000.sdhci] using ADMA 64-bit
+[    3.695879] PLL: shutdown
+[    3.695969] PLL: enable
+[    3.701923] ledtrig-cpu: registered to indicate activity on CPUs
+[    3.702062] usbcore: registered new interface driver usbhid
+[    3.702071] usbhid: USB HID core driver
+[    3.703876] fpga_manager fpga0: Xilinx ZynqMP FPGA Manager registered
+[    3.705688] pktgen: Packet Generator for packet performance testing. Version: 2.75
+[    3.707899] Netfilter messages via NETLINK v0.30.
+[    3.708016] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    3.708197] Initializing XFRM netlink socket
+[    3.708259] NET: Registered protocol family 10
+[    3.708683] Segment Routing with IPv6
+[    3.708727] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    3.708891] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    3.709196] NET: Registered protocol family 17
+[    3.709216] NET: Registered protocol family 15
+[    3.709234] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[    3.709248] Ebtables v2.0 registered
+[    3.709340] can: controller area network core (rev 20170425 abi 9)
+[    3.709373] NET: Registered protocol family 29
+[    3.709388] can: raw protocol (rev 20170425)
+[    3.709396] can: broadcast manager protocol (rev 20170425 t)
+[    3.709407] can: netlink gateway (rev 20170425) max_hops=1
+[    3.709598] Bluetooth: RFCOMM TTY layer initialized
+[    3.709612] Bluetooth: RFCOMM socket layer initialized
+[    3.709629] Bluetooth: RFCOMM ver 1.11
+[    3.709640] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    3.709647] Bluetooth: BNEP filters: protocol multicast
+[    3.709658] Bluetooth: BNEP socket layer initialized
+[    3.709666] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    3.709676] Bluetooth: HIDP socket layer initialized
+[    3.709785] 9pnet: Installing 9P2000 support
+[    3.709804] Key type dns_resolver registered
+[    3.710166] registered taskstats version 1
+[    3.710507] Btrfs loaded, crc32c=crc32c-generic
+[    3.715532] ff000000.serial: ttyPS0 at MMIO 0xff000000 (irq = 40, base_baud = 6250000) is a xuartps
+[    3.878052] ata2: SATA link down (SStatus 0 SControl 330)
+[    3.878081] ata1: SATA link down (SStatus 0 SControl 330)
+[    4.136653] mmc0: new HS200 MMC card at address 0001
+[    4.145567] mmcblk0: mmc0:0001 IS008G 7.28 GiB 
+[    4.155295] mmcblk0boot0: mmc0:0001 IS008G partition 1 4.00 MiB
+[    4.161550] mmcblk0boot1: mmc0:0001 IS008G partition 2 4.00 MiB
+[    4.166323] mmcblk0rpmb: mmc0:0001 IS008G partition 3 4.00 MiB
+[    4.170729]  mmcblk0: p1
+[    5.392950] console [ttyPS0] enabled
+[    5.397699] xilinx-psgtr fd400000.zynqmp_phy: Lane:1 type:8 protocol:4 pll_locked:yes
+[    5.405918] PLL: shutdown
+[    5.410087] xilinx-dp-snd-codec fd4a0000.zynqmp-display:zynqmp_dp_snd_codec0: Xilinx DisplayPort Sound Codec probed
+[    5.420683] xilinx-dp-snd-pcm zynqmp_dp_snd_pcm0: Xilinx DisplayPort Sound PCM probed
+[    5.428640] xilinx-dp-snd-pcm zynqmp_dp_snd_pcm1: Xilinx DisplayPort Sound PCM probed
+[    5.436896] xilinx-dp-snd-card fd4a0000.zynqmp-display:zynqmp_dp_snd_card: xilinx-dp-snd-codec-dai <-> xilinx-dp-snd-codec-dai mapping ok
+[    5.449251] xilinx-dp-snd-card fd4a0000.zynqmp-display:zynqmp_dp_snd_card: xilinx-dp-snd-codec-dai <-> xilinx-dp-snd-codec-dai mapping ok
+[    5.461831] xilinx-dp-snd-card fd4a0000.zynqmp-display:zynqmp_dp_snd_card: Xilinx DisplayPort Sound Card probed
+[    5.471936] OF: graph: no port node found in /amba/zynqmp-display@fd4a0000
+[    5.478863] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    5.485400] [drm] No driver support for vblank timestamp query.
+[    5.491364] xlnx-drm xlnx-drm.0: bound fd4a0000.zynqmp-display (ops 0xffffff8008af7228)
+[    5.529994] [drm] Cannot find any crtc or sizes
+[    5.534606] [drm] Initialized xlnx 1.0.0 20130509 for fd4a0000.zynqmp-display on minor 0
+[    5.542638] zynqmp-display fd4a0000.zynqmp-display: ZynqMP DisplayPort Subsystem driver probed
+[    5.552040] rtc_zynqmp ffa60000.rtc: setting system clock to 2019-11-24 18:26:07 UTC (1574619967)
+[    5.560945] clk: Not disabling unused clocks
+[    5.565174] ALSA device list:
+[    5.568083]   #0: DisplayPort monitor
+[    5.572104] Freeing unused kernel memory: 512K
+[    5.678150] udevd[1733]: starting version 3.2.2
+[    5.687215] udevd[1734]: starting eudev-3.2.2
+[    5.729260] gsi_apu_fw_sim: loading out-of-tree module taints kernel.
+[    5.736316] GSI Tecnology FW System module [ 2019-08-21-17:20:50 ]
+[    5.742476] db0...........0x00000000 [0x88]
+[    5.742476] db1...........0x00000100 [0x88]
+[    5.742476] MSIX set......0x000001c0 [0x4]
+[    5.742476] MSIX clr......0x000001c4 [0x4]
+[    5.742476] queues........0x00000200 [0x1c0][0x40]
+[    5.742476] queue 1.......0x00000240
+[    5.742476] queue 2.......0x00000280
+[    5.742476] queue 3.......0x000002c0
+[    5.742476] queue 4.......0x00000300
+[    5.742476] queue 5.......0x00000340
+[    5.742476] queue 6.......0x00000380
+[    5.742476] GPRS..........0x000003c0
+[    5.742476] misc..........0x00000400 [0x10]
+[    5.742476] FPGA rev......0x00000480 [0x8]
+[    5.742480] events[sz]........0x00000000[64]
+[    5.742480] summery...........0x00000080
+[    5.742480] mask..............0x00000084
+[    5.742706] gsi-fw a0010000.gsi-fw: Device Tree Probing [4]
+[    5.748236] calling gsi_fw_init
+[    5.748265] gsi_resource_get_mem_byname: name=acc0_rfu
+[    5.748273] gsi-fw a0010000.gsi-fw: attempt to locate memory on acc0_rfu #1
+[    5.755184] gsi-fw a0010000.gsi-fw: memory located on acc0_rfu #1 @0xa0200000-0xa0200fff
+[    5.757449] zynqmp_r5_remoteproc ff9a0100.zynqmp_r5_rproc: RPU core_conf: split0
+[    5.757476] zynqmp_r5_remoteproc ff9a0100.zynqmp_r5_rproc: no 'srams' firmware mmio-sram memories specified in DTB.
+[    5.757481] remoteproc remoteproc0: releasing ff9a0100.zynqmp_r5_rproc
+[    5.757499] zynqmp_r5_remoteproc: probe of ff9a0100.zynqmp_r5_rproc failed with error -22
+[    5.757533] zynqmp_r5_remoteproc ff9a0200.zynqmp_r5_rproc: RPU core_conf: split1
+[    5.757543] zynqmp_r5_remoteproc ff9a0200.zynqmp_r5_rproc: no 'srams' firmware mmio-sram memories specified in DTB.
+[    5.757546] remoteproc remoteproc0: releasing ff9a0200.zynqmp_r5_rproc
+[    5.757556] zynqmp_r5_remoteproc: probe of ff9a0200.zynqmp_r5_rproc failed with error -22
+[    5.828225] gsi_doorbell_int:
+[    5.828237] gsi_resource_get_mem_byname: name=acc0_mailbox
+[    5.828246] gsi-fw a0010000.gsi-fw: attempt to locate memory on acc0_mailbox #3
+[    5.835511] gsi-fw a0010000.gsi-fw: memory located on acc0_mailbox #3 @0xa0100000-0xa0101fff
+[    5.846052] gsi-fw a0010000.gsi-fw: gsi_acc_interface_early_init
+[    5.852021] gsi-fw a0010000.gsi-fw: gsi_host_interface_early_init
+[    5.858081] gsi_resource_get_mem_byname: name=host_rfu
+[    5.858090] gsi-fw a0010000.gsi-fw: attempt to locate memory on host_rfu #0
+[    5.865024] gsi-fw a0010000.gsi-fw: memory located on host_rfu #0 @0xa0010000-0xa0010fff
+[    5.873155] gsi_doorbell_int:
+[    5.873165] gsi_doorbell_int:
+[    5.881058] --------------------------------------------------------------------------
+[    5.881064] gsi_fw_set_pci_mbar_expose_reset: N=4
+[    5.881075] gsi-fw a0010000.gsi-fw: gsi_fw_map_region:[region=0] bar0_DDR [expose=-1]
+[    5.888874] _gsi_resource_get_reserved_mem: name=bar0_DDR num=0
+[    5.888929] gsi_fw_set_mem_regions: region res 0x40000000-0x7fffffff [rc=0]
+[    5.895851] gsi-fw a0010000.gsi-fw: gsi_fw_map_region[1]: paddr: 0x40000000 vaddr: 0xffffff8040000000 [res.start=0x40000000, end=0x80000000, size=0x40000000] total mapped size = 0x0000000040000000 total exposed size = 0x0000000000000000
+[    5.916757] gsi-fw a0010000.gsi-fw: gsi_fw_map_region:[region=1] bar2_3_DDR [expose=2]
+[    5.924643] _gsi_resource_get_reserved_mem: name=bar2_3_DDR num=1
+[    5.924701] gsi_fw_set_mem_regions: region res 0x800000000-0x97fffffff [rc=0]
+[    5.931790] [expose]: total expose = 0x0000000180000000 [0x0000000180000000]
+[    5.931794] gsi_fw_set_pci_mbar_expose_size: mbar=2, sz=0x180000000
+[    5.931805] gsi-fw a0010000.gsi-fw: gsi_fw_map_region[2]: paddr: 0x800000000 vaddr: 0xffffff80c0000000 [res.start=0x800000000, end=0x980000000, size=0x180000000] total mapped size = 0x00000001c0000000 total exposed size = 0x0000000180000000
+[    5.953050] gsi-fw a0010000.gsi-fw: gsi_fw_map_region:[region=2] bar4_5_DDR [expose=3]
+[    5.960937] _gsi_resource_get_reserved_mem: name=bar4_5_DDR num=2
+[    5.960996] gsi_fw_set_mem_regions: region res 0x1000000000-0x10ffffffff [rc=0]
+[    5.968245] [expose]: total expose = 0x0000000280000000 [0x0000000100000000]
+[    5.968248] gsi_fw_set_pci_mbar_expose_size: mbar=3, sz=0x100000000
+[    5.968258] gsi-fw a0010000.gsi-fw: gsi_fw_map_region[3]: paddr: 0x1000000000 vaddr: 0xffffff8280000000 [res.start=0x1000000000, end=0x1100000000, size=0x100000000] total mapped size = 0x00000002c0000000 total exposed size = 0x0000000280000000
+[    5.989771] --------------------------------------------------------------------------
+[    5.989774] [FPGA] revision 0x00000000
+[    5.989777] [FPGA] Date 0x05152019
+[    5.989779] [FPGA] Version 0x00030202
+[    5.989783] WARNING: [GSI FW revision]: failed to find revision!!! ( gsi_fw_revision_get(0x00030202) => set default board version 0x00000001 )
+[    5.989790] gsi_fw_config_init: fpga version: [v00.00.01-0] 00/00/0000 [ 0x00000000:0x00000001 ] Num APUs[1] APUCs[4](4) DRAM size 0x0000000180000000 MB
+[    5.989792] --------------------------------------------------------------------------
+[    5.989795] gsi_pl_misc_interface_init[debug]: APU Mask  [0x00018000] PL Mask  [0x00020000]
+[    5.998092] gsi_pl_misc_interface_init[debug]: APU Events[0x00000000] PL Events[0x00000000]
+[    6.006488] gsi_pl_misc_interface_init[debug-readback]:  APU Mask  [0x00018000] PL Mask  [0x00020000]
+[    6.015643] --------------------------------------------------------------------------
+[    6.015646] gsi_fw_apus_init
+[    6.015647] gsi_fw_prepare_apu_kernel
+[    6.015648] gsi_fw_apuc_reset_mode_all
+[    6.015650] gsi_fw_apu_reset 0 GSI_APUC_MODE_RESET
+[    6.015652] gsi_fw_apu_reset 1 GSI_APUC_MODE_RESET
+[    6.015654] gsi_fw_apu_reset 2 GSI_APUC_MODE_RESET
+[    6.015656] gsi_fw_apu_reset 3 GSI_APUC_MODE_RESET
+[    6.015661] gsi-fw a0010000.gsi-fw: gsi_fw_apu_prepare_L1 fixup; load L1 line maps from storage to
+[    6.024572] gsi_fw_apu_prepare 0
+[    6.024577] gsi-fw a0010000.gsi-fw: gsi_fw_apu_status_clr(apu_id=0, mask=0xffffffff)
+[    6.032295] gsi_fw_apuc_prepare 0, 0
+[    6.032297] gsi_apuc_at_reset_table 0,0
+[    6.032299] gsi_fw_apuc_prepare 0, 1
+[    6.032300] gsi_apuc_at_reset_table 0,1
+[    6.032302] gsi_fw_apuc_prepare 0, 2
+[    6.032304] gsi_apuc_at_reset_table 0,2
+[    6.032305] gsi_fw_apuc_prepare 0, 3
+[    6.032307] gsi_apuc_at_reset_table 0,3
+[    6.032312] gsi-fw a0010000.gsi-fw: gsi_fw_apu_status_set(apu_id=4, mask=0x00000002)
+[    6.040020] registering the APUCs doorbells relevant to the boot 
+[    6.040021] gsi_fw_bist
+[    6.040023] gsi_fw_apus_boot
+[    6.040024] gsi_fw_apu_boot 0
+[    6.040027] gsi_fw_apuc_boot 0 0
+[    6.040029] gsi_fw_apu_reset 0 GSI_APUC_MODE_RUN
+[    6.040030] gsi_fw_apuc_boot 0 1
+[    6.040032] gsi_fw_apu_reset 1 GSI_APUC_MODE_RUN
+[    6.040033] gsi_fw_apuc_boot 0 2
+[    6.040035] gsi_fw_apu_reset 2 GSI_APUC_MODE_RUN
+[    6.040037] gsi_fw_apuc_boot 0 3
+[    6.040039] gsi_fw_apu_reset 3 GSI_APUC_MODE_RUN
+[    6.040040] gsi_fw_apus_wait_for_ready
+[    6.040045] gsi-fw a0010000.gsi-fw: gsi_acc_interface_init
+[    6.045481] gsi_doorbell_register: gsi_fw_acc_irq num=1 
+[    6.045484] gsi_doorbell_register: (0) id=0  gsi_fw_acc_irq-49 
+[    6.045486]  (0) gsi_doorbellregister: request_irq gsi_fw_acc_irq-49
+[    6.045514] gsi-fw a0010000.gsi-fw: gsi_host_interface_init
+[    6.051038] gsi_doorbell_register: gsi_fw_hst_irq num=2 
+[    6.051041] gsi_doorbell_register: (0) id=1  gsi_fw_hst_irq-46 
+[    6.051043]  (0) gsi_doorbellregister: request_irq gsi_fw_hst_irq-46
+[    6.051061] gsi_doorbell_register: (1) id=2  gsi_fw_hst_irq-47 
+[    6.051063]  (1) gsi_doorbellregister: request_irq gsi_fw_hst_irq-47
+[    6.051080] gsi-fw a0010000.gsi-fw: gsi_ext_interface_init
+[    6.056539] gsi_sim_chrdev_init: idx=0
+[    6.056542] gsi_sim_chrdev_init: idx=1
+[    6.056543] gsi_sim_chrdev_init: idx=2
+[    6.056545] gsi_sim_chrdev_init: idx=3
+[    6.056546] gsi_cdev_data_init: 
+[    6.056549] gsi_cdev_data_init: 
+[    6.056551] gsi_sim_dev_register: major=243 minor=0
+[    6.056665] gsi_sim_dev_register: major=243 minor=1
+[    6.056721] gsi_sim_dev_register: major=243 minor=2
+[    6.057008] gsi_doorbell_register_event(ev=0) id=1 mask=0x00000001 regs[0x00000000] 
+[    6.057012] gsi_doorbell_register_event(ev=1) id=1 mask=0x00000003 regs[0x00000000] 
+[    6.057015] gsi_doorbell_register_event(ev=2) id=1 mask=0x00000007 regs[0x00000000] 
+[    6.057018] gsi_doorbell_register_event(ev=3) id=1 mask=0x0000000f regs[0x00000000] 
+[    6.057021] gsi_doorbell_register_event(ev=4) id=1 mask=0x0000001f regs[0x00000000] 
+[    6.057024] gsi_doorbell_register_event(ev=15) id=1 mask=0x0000801f regs[0x00000000] 
+[    6.057025] before gsi_doorbell_apuc_register_event: 
+[    6.057029] gsi_doorbell_register_event(ev=0,apuc=0) id=0 mask=0x00000001 regs[0x00000000] 
+[    6.057032] gsi_doorbell_register_event(ev=1,apuc=0) id=0 mask=0x00000003 regs[0x00000000] 
+[    6.057035] gsi_doorbell_register_event(ev=0,apuc=1) id=0 mask=0x00000007 regs[0x00000000] 
+[    6.057039] gsi_doorbell_register_event(ev=1,apuc=1) id=0 mask=0x0000000f regs[0x00000000] 
+[    6.057042] gsi_doorbell_register_event(ev=0,apuc=2) id=0 mask=0x0000001f regs[0x00000000] 
+[    6.057045] gsi_doorbell_register_event(ev=1,apuc=2) id=0 mask=0x0000003f regs[0x00000000] 
+[    6.057048] gsi_doorbell_register_event(ev=0,apuc=3) id=0 mask=0x0000007f regs[0x00000000] 
+[    6.057051] gsi_doorbell_register_event(ev=1,apuc=3) id=0 mask=0x000000ff regs[0x00000000] 
+[    6.057053] before gsi_doorbell_enable_events
+[    6.057058] gsi_doorbell_wq_irq: enter IRQ=46
+[    6.061347] [host DB]: gsi_host_doorbell_event_cb: doorbell event[0] ( apuc=0 ev_id=0 ev_val=0x00000000)
+[    6.061350] [host DB]: GSI_EV_FW_READY
+[    6.061352] [host DB]: wake_up_all host2fw
+[    6.190188] FAT-fs (mmcblk0p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[    6.608158] gsi_sim dev_open: minor=243 dev id=0 idx=0
+[    6.613249] gsi_sim_dev_mmap: 1
+[    6.613255] gsi_sim_dev_mmap: vm_start=0x7fb0a12000 vm_end=0x7fb0a13000 size=0x00001000 offset=0x00000000
+[    6.613268] gsi-fw a0010000.gsi-fw: attempt to locate memory on host_rfu #0
+[    6.620194] gsi-fw a0010000.gsi-fw: memory located on host_rfu #0 @0xa0010000-0xa0010fff
+[    6.633806] gsi_sim_dev_mmap: phy_addr=0x00000000a0010000[0x00000000a0010000]  size=0x0000000000001000 offset=0x0000000000000000
+[    6.633809] gsi_sim_dev_mmap: exit(0)
+[    6.633884] gsi_sim dev_open: minor=243 dev id=1 idx=1
+[    6.641142] gsi_acc_dev_mmap: acc0
+[    6.641147] gsi_acc_dev_mmap: vm_start=0x7fb0849000 vm_end=0x7fb086e000 size=0x00025000 offset=0x00000000
+[    6.641159] gsi-fw a0010000.gsi-fw: attempt to locate memory on acc0_mailbox #3
+[    6.653114] gsi-fw a0010000.gsi-fw: memory located on acc0_mailbox #3 @0xa0100000-0xa0101fff
+[    6.661491] gsi-fw a0010000.gsi-fw: attempt to locate memory on acc0_rfu #1
+[    6.661497] gsi-fw a0010000.gsi-fw: memory located on acc0_rfu #1 @0xa0200000-0xa0200fff
+[    6.661502] gsi-fw a0010000.gsi-fw: attempt to locate memory on accb0_rfu #13
+[    6.661506] gsi-fw a0010000.gsi-fw: memory located on accb0_rfu #13 @0xb0020000-0xb0020fff
+[    6.661511] gsi-fw a0010000.gsi-fw: attempt to locate memory on acca0_apb #12
+[    6.661516] gsi-fw a0010000.gsi-fw: memory located on acca0_apb #12 @0xb1000000-0xb101ffff
+[    6.661521] gsi-fw a0010000.gsi-fw: attempt to locate memory on ubc0_rfu #14
+[    6.661525] gsi-fw a0010000.gsi-fw: memory located on ubc0_rfu #14 @0xb1040000-0xb1040fff
+[    6.661528] gsi_load_mem_acc_resources: res[0]: start=0xa0100000 end=0xa0101fff size=0x00002000
+[    6.661530] gsi_load_mem_acc_resources: res[1]: start=0xa0200000 end=0xa0200fff size=0x00001000
+[    6.661533] gsi_load_mem_acc_resources: res[2]: start=0xb0020000 end=0xb0020fff size=0x00001000
+[    6.661535] gsi_load_mem_acc_resources: res[3]: start=0xb1000000 end=0xb101ffff size=0x00020000
+[    6.661537] gsi_load_mem_acc_resources: res[4]: start=0xb1040000 end=0xb1040fff size=0x00001000
+[    6.661538] gsi_remap_append_ranges: n_resources=5
+[    6.661542] gsi_remap_append_ranges: phy_addr=0x00000000a0100000 size=0x0000000000002000 offset=0x0000000000000000 [vaddr=0x7fb0849000]
+[    6.661545] gsi_remap_append_ranges: phy_addr=0x00000000a0200000 size=0x0000000000001000 offset=0x0000000000000000 [vaddr=0x7fb084b000]
+[    6.661548] gsi_remap_append_ranges: phy_addr=0x00000000b0020000 size=0x0000000000001000 offset=0x0000000000000000 [vaddr=0x7fb084c000]
+[    6.661550] gsi_remap_append_ranges: phy_addr=0x00000000b1000000 size=0x0000000000020000 offset=0x0000000000000000 [vaddr=0x7fb084d000]
+[    6.661554] gsi_remap_append_ranges: phy_addr=0x00000000b1040000 size=0x0000000000001000 offset=0x0000000000000000 [vaddr=0x7fb086d000]
+[    6.661555] gsi_sim_dev_mmap: exit(0)
+[    6.661572] gsi_sim dev_open: minor=243 dev id=2 idx=2
+[    6.661578] gsi_sim_dev_mmap: 1
+[    6.661581] gsi_sim_dev_mmap(data): vm_start=0x7fb03bc000 vm_end=0x7fb0849000 size=0x0048d000 offset=0x00000000
+[    6.661585] _gsi_resource_get_reserved_mem: name=bar2_3_DDR num=1
+[    6.661638] gsi_sim_dev_mmap(data): phy_addr=0x0000000800000000[0x0000000800000000]  size=0x000000000048d000 offset=0x0000000000000000
+[    6.661639] mmapp (data): cache mode = non-cached
+[    6.661640] mmapp (data): mapped as uncached!!!
+[    6.661656] gsi_sim_dev_mmap: exit(0)
+[    6.773135] pps pps0: new PPS source ptp0
+[    6.777087] macb ff0e0000.ethernet: gem-ptp-timer ptp clock registered.
+[    6.783727] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[    7.788133] macb ff0e0000.ethernet eth0: link up (100/Full)
+[    7.793652] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[    8.700896] gsi_sim_dev_release
+[    8.700901] gsi_sim_dev_release
+[    8.700903] gsi_sim_dev_release
+[   73.648624] gsi_sim dev_open: minor=243 dev id=0 idx=0
+[   73.653803] gsi_sim_dev_mmap: 1
+[   73.653809] gsi_sim_dev_mmap: vm_start=0x7f8d3a6000 vm_end=0x7f8d3a7000 size=0x00001000 offset=0x00000000
+[   73.653823] gsi-fw a0010000.gsi-fw: attempt to locate memory on host_rfu #0
+[   73.660745] gsi-fw a0010000.gsi-fw: memory located on host_rfu #0 @0xa0010000-0xa0010fff
+[   73.668795] gsi_sim_dev_mmap: phy_addr=0x00000000a0010000[0x00000000a0010000]  size=0x0000000000001000 offset=0x0000000000000000
+[   73.668797] gsi_sim_dev_mmap: exit(0)
+[   73.669053] gsi_sim dev_open: minor=243 dev id=1 idx=1
+[   73.674139] gsi_acc_dev_mmap: acc0
+[   73.674143] gsi_acc_dev_mmap: vm_start=0x7f8d1dd000 vm_end=0x7f8d202000 size=0x00025000 offset=0x00000000
+[   73.674155] gsi-fw a0010000.gsi-fw: attempt to locate memory on acc0_mailbox #3
+[   73.681421] gsi-fw a0010000.gsi-fw: memory located on acc0_mailbox #3 @0xa0100000-0xa0101fff
+[   73.689860] gsi-fw a0010000.gsi-fw: attempt to locate memory on acc0_rfu #1
+[   73.696782] gsi-fw a0010000.gsi-fw: memory located on acc0_rfu #1 @0xa0200000-0xa0200fff
+[   73.704863] gsi-fw a0010000.gsi-fw: attempt to locate memory on accb0_rfu #13
+[   73.711970] gsi-fw a0010000.gsi-fw: memory located on accb0_rfu #13 @0xb0020000-0xb0020fff
+[   73.720228] gsi-fw a0010000.gsi-fw: attempt to locate memory on acca0_apb #12
+[   73.727343] gsi-fw a0010000.gsi-fw: memory located on acca0_apb #12 @0xb1000000-0xb101ffff
+[   73.735595] gsi-fw a0010000.gsi-fw: attempt to locate memory on ubc0_rfu #14
+[   73.742622] gsi-fw a0010000.gsi-fw: memory located on ubc0_rfu #14 @0xb1040000-0xb1040fff
+[   73.750781] gsi_load_mem_acc_resources: res[0]: start=0xa0100000 end=0xa0101fff size=0x00002000
+[   73.750792] gsi_load_mem_acc_resources: res[1]: start=0xa0200000 end=0xa0200fff size=0x00001000
+[   73.750799] gsi_load_mem_acc_resources: res[2]: start=0xb0020000 end=0xb0020fff size=0x00001000
+[   73.750804] gsi_load_mem_acc_resources: res[3]: start=0xb1000000 end=0xb101ffff size=0x00020000
+[   73.750807] gsi_load_mem_acc_resources: res[4]: start=0xb1040000 end=0xb1040fff size=0x00001000
+[   73.750809] gsi_remap_append_ranges: n_resources=5
+[   73.750812] gsi_remap_append_ranges: phy_addr=0x00000000a0100000 size=0x0000000000002000 offset=0x0000000000000000 [vaddr=0x7f8d1dd000]
+[   73.750819] gsi_remap_append_ranges: phy_addr=0x00000000a0200000 size=0x0000000000001000 offset=0x0000000000000000 [vaddr=0x7f8d1df000]
+[   73.750822] gsi_remap_append_ranges: phy_addr=0x00000000b0020000 size=0x0000000000001000 offset=0x0000000000000000 [vaddr=0x7f8d1e0000]
+[   73.750826] gsi_remap_append_ranges: phy_addr=0x00000000b1000000 size=0x0000000000020000 offset=0x0000000000000000 [vaddr=0x7f8d1e1000]
+[   73.750830] gsi_remap_append_ranges: phy_addr=0x00000000b1040000 size=0x0000000000001000 offset=0x0000000000000000 [vaddr=0x7f8d201000]
+[   73.750884] gsi_sim dev_open: minor=243 dev id=2 idx=2
+[   73.755967] gsi_sim_dev_mmap: 1
+[   73.755974] gsi_sim_dev_mmap(data): vm_start=0x7f8cd50000 vm_end=0x7f8d1dd000 size=0x0048d000 offset=0x00000000
+[   73.755981] _gsi_resource_get_reserved_mem: name=bar2_3_DDR num=1
+[   73.756038] gsi_sim_dev_mmap(data): phy_addr=0x0000000800000000[0x0000000800000000]  size=0x000000000048d000 offset=0x0000000000000000
+[   73.756041] mmapp (data): cache mode = non-cached
+[   73.756042] mmapp (data): mapped as uncached!!!
+[   73.756059] gsi_sim_dev_mmap: exit(0)
+[   77.386053] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   77.386060] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=0 (RD)out=0 flags=0x20002
+[   77.386063] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   77.404224] gsi_doorbell_wq_irq: enter IRQ=49
+[   77.408529] [ACC DB]: recieved ACC event for apuc=0 ev_id=0 ev_val=0x00000011
+[   77.408533] [ACC DB]: wake_up_all ACC2fw
+[   77.408558] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=17,val=0]
+[   77.408560] fw[RD] exit [len=2]
+[   77.408615] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   77.408619] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=1 (RD)out=1 flags=0x20002
+[   77.408621] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   77.426704] gsi_doorbell_wq_irq: enter IRQ=49
+[   77.431003] [ACC DB]: recieved ACC event for apuc=1 ev_id=0 ev_val=0x00000011
+[   77.431005] [ACC DB]: wake_up_all ACC2fw
+[   77.431019] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=17,val=1]
+[   77.431022] fw[RD] exit [len=2]
+[   77.431076] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   77.431079] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=2 (RD)out=2 flags=0x20002
+[   77.431082] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   77.449206] gsi_doorbell_wq_irq: enter IRQ=49
+[   77.453500] [ACC DB]: recieved ACC event for apuc=2 ev_id=0 ev_val=0x00000011
+[   77.453502] [ACC DB]: wake_up_all ACC2fw
+[   77.453517] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=17,val=2]
+[   77.453520] fw[RD] exit [len=2]
+[   77.453569] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   77.453573] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=3 (RD)out=3 flags=0x20002
+[   77.453575] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   77.471667] gsi_doorbell_wq_irq: enter IRQ=49
+[   77.475960] [ACC DB]: recieved ACC event for apuc=3 ev_id=0 ev_val=0x00000011
+[   77.475962] [ACC DB]: wake_up_all ACC2fw
+[   77.475977] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=17,val=3]
+[   77.475980] fw[RD] exit [len=2]
+[   78.476248] fw[WR] [pid=6448]: hst: len=2 offset=0xffffff801284beb8 dev_id=0
+[   78.476253] fw[WR]: send msix num=5
+[   78.476256] gsi_send_msix: SYS_EXCEPTION
+[   78.476260] [MSI-X]: gsi_rfu_set_msix(5): the writen OR mask=0x20 [msix= 0x00000020]
+[   78.476312] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   78.476317] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=4 (RD)out=4 flags=0x20002
+[   78.476319] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   78.476331] fw[RD]: hst: len=2 dev_id=0 sim=0xffffff8000a51ee0
+[   78.476335] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=0,val=0]
+[   78.476337] fw[RD] exit [len=2]
+[   78.476346] fw[WR] [pid=6448]: hst: len=2 offset=0xffffff801284beb8 dev_id=0
+[   78.476348] fw[WR]: send msix num=158
+[   78.476350] gsi_send_msix: unsupported msix=158, send anyway
+[   78.476353] [MSI-X]: gsi_rfu_set_msix(158): the writen OR mask=0x0 [msix= 0x00000000]
+[   78.476421] fw[WR] [pid=11504]: hst: len=2 offset=0xffffff8009653eb8 dev_id=0
+[   78.476423] fw[WR]: send msix num=0
+[   78.476425] gsi_send_msix: DEVICE_FW_READY
+[   78.476428] [MSI-X]: gsi_rfu_set_msix(0): the writen OR mask=0x1 [msix= 0x00000001]
+[   78.476433] fw[RD]: hst: len=2 dev_id=0 sim=0xffffff8000a51ee0
+[   78.476436] fw[RD] [empty]: hst: len=2 sim_id=0 (WR)in=1 (RD)out=1 flags=0x20002
+[   78.476438] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   78.476462] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   78.476464] fw[WR]: send msix num=3
+[   78.476466] gsi_send_msix: USR_TASK_CLEAR
+[   78.476469] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   84.732081] gsi_doorbell_wq_irq: enter IRQ=46
+[   84.736375] [host DB]: gsi_host_doorbell_event_cb: doorbell event[3] ( apuc=1 ev_id=1 ev_val=0x00000000)
+[   84.736377] [host DB]: wake_up_all host2fw
+[   84.736505] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=3,val=0]
+[   84.736508] fw[RD] exit [len=2]
+[   84.736545] fw[RD]: hst: len=2 dev_id=0 sim=0xffffff8000a51ee0
+[   84.736549] fw[RD] [empty]: hst: len=2 sim_id=0 (WR)in=2 (RD)out=2 flags=0x20002
+[   84.736551] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   84.736606] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   84.736608] fw[WR]: send msix num=3
+[   84.736610] gsi_send_msix: USR_TASK_CLEAR
+[   84.736614] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   84.736671] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   84.736673] fw[WR]: send msix num=3
+[   84.736674] gsi_send_msix: USR_TASK_CLEAR
+[   84.736677] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   84.736694] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   84.736695] fw[WR]: send msix num=3
+[   84.736697] gsi_send_msix: USR_TASK_CLEAR
+[   84.736699] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   84.736715] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   84.736717] fw[WR]: send msix num=3
+[   84.736718] gsi_send_msix: USR_TASK_CLEAR
+[   84.736721] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   84.736737] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   84.736738] fw[WR]: send msix num=3
+[   84.736740] gsi_send_msix: USR_TASK_CLEAR
+[   84.736742] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   84.736749] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   84.736751] fw[WR]: send msix num=3
+[   84.736752] gsi_send_msix: USR_TASK_CLEAR
+[   84.736755] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   84.742869] gsi_doorbell_wq_irq: enter IRQ=49
+[   84.747161] [ACC DB]: recieved ACC event for apuc=0 ev_id=0 ev_val=0x00000010
+[   84.747163] [ACC DB]: wake_up_all ACC2fw
+[   84.747169] [ACC DB]: recieved ACC event for apuc=1 ev_id=0 ev_val=0x00000010
+[   84.747170] [ACC DB]: wake_up_all ACC2fw
+[   84.747173] [ACC DB]: recieved ACC event for apuc=2 ev_id=0 ev_val=0x00000010
+[   84.747174] [ACC DB]: wake_up_all ACC2fw
+[   84.747177] [ACC DB]: recieved ACC event for apuc=3 ev_id=0 ev_val=0x00000010
+[   84.747185] [ACC DB]: wake_up_all ACC2fw
+[   84.747294] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=0]
+[   84.747297] fw[RD] exit [len=2]
+[   84.747368] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   84.747371] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=1]
+[   84.747373] fw[RD] exit [len=2]
+[   84.747381] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   84.747383] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=2]
+[   84.747385] fw[RD] exit [len=2]
+[   84.747392] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   84.747394] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=3]
+[   84.747396] fw[RD] exit [len=2]
+[   84.747408] fw[WR] [pid=11502]: hst: len=2 offset=0xffffff800ac0beb8 dev_id=0
+[   84.747410] fw[WR]: send msix num=4
+[   84.747412] gsi_send_msix: USR_TASK_COMP_READY
+[   84.747416] [MSI-X]: gsi_rfu_set_msix(4): the writen OR mask=0x10 [msix= 0x00000010]
+[   84.747421] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   84.747424] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=8 (RD)out=8 flags=0x20002
+[   84.747426] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   84.747440] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   84.747441] fw[WR]: send msix num=3
+[   84.747443] gsi_send_msix: USR_TASK_CLEAR
+[   84.747446] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   84.747503] gsi_doorbell_wq_irq: enter IRQ=46
+[   84.751778] [host DB]: gsi_host_doorbell_event_cb: doorbell event[3] ( apuc=1 ev_id=1 ev_val=0x00000000)
+[   84.751780] [host DB]: wake_up_all host2fw
+[   84.751810] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=3,val=0]
+[   84.751813] fw[RD] exit [len=2]
+[   84.751826] fw[RD]: hst: len=2 dev_id=0 sim=0xffffff8000a51ee0
+[   84.751829] fw[RD] [empty]: hst: len=2 sim_id=0 (WR)in=3 (RD)out=3 flags=0x20002
+[   84.751831] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   84.751842] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   84.751844] fw[WR]: send msix num=3
+[   84.751845] gsi_send_msix: USR_TASK_CLEAR
+[   84.751848] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   84.751863] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   84.751865] fw[WR]: send msix num=3
+[   84.751866] gsi_send_msix: USR_TASK_CLEAR
+[   84.751869] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   84.751880] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   84.751881] fw[WR]: send msix num=3
+[   84.751882] gsi_send_msix: USR_TASK_CLEAR
+[   84.751885] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   84.751896] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   84.751897] fw[WR]: send msix num=3
+[   84.751898] gsi_send_msix: USR_TASK_CLEAR
+[   84.751901] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   84.751912] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   84.751914] fw[WR]: send msix num=3
+[   84.751915] gsi_send_msix: USR_TASK_CLEAR
+[   84.751918] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   84.751924] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   84.751925] fw[WR]: send msix num=3
+[   84.751927] gsi_send_msix: USR_TASK_CLEAR
+[   84.751929] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   84.756820] gsi_doorbell_wq_irq: enter IRQ=49
+[   84.761109] [ACC DB]: recieved ACC event for apuc=0 ev_id=0 ev_val=0x00000010
+[   84.761111] [ACC DB]: wake_up_all ACC2fw
+[   84.761116] [ACC DB]: recieved ACC event for apuc=1 ev_id=0 ev_val=0x00000010
+[   84.761117] [ACC DB]: wake_up_all ACC2fw
+[   84.761120] [ACC DB]: recieved ACC event for apuc=2 ev_id=0 ev_val=0x00000010
+[   84.761121] [ACC DB]: wake_up_all ACC2fw
+[   84.761124] [ACC DB]: recieved ACC event for apuc=3 ev_id=0 ev_val=0x00000010
+[   84.761125] [ACC DB]: wake_up_all ACC2fw
+[   84.761141] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=0]
+[   84.761144] fw[RD] exit [len=2]
+[   84.761178] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   84.761181] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=1]
+[   84.761182] fw[RD] exit [len=2]
+[   84.761190] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   84.761193] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=2]
+[   84.761194] fw[RD] exit [len=2]
+[   84.761201] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   84.761204] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=3]
+[   84.761205] fw[RD] exit [len=2]
+[   84.761218] fw[WR] [pid=11502]: hst: len=2 offset=0xffffff800ac0beb8 dev_id=0
+[   84.761220] fw[WR]: send msix num=4
+[   84.761222] gsi_send_msix: USR_TASK_COMP_READY
+[   84.761226] [MSI-X]: gsi_rfu_set_msix(4): the writen OR mask=0x10 [msix= 0x00000010]
+[   84.761232] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   84.761235] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=12 (RD)out=12 flags=0x20002
+[   84.761237] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   84.761251] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   84.761252] fw[WR]: send msix num=3
+[   84.761253] gsi_send_msix: USR_TASK_CLEAR
+[   84.761256] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   84.761374] gsi_doorbell_wq_irq: enter IRQ=46
+[   84.765649] [host DB]: gsi_host_doorbell_event_cb: doorbell event[3] ( apuc=1 ev_id=1 ev_val=0x00000000)
+[   84.765651] [host DB]: wake_up_all host2fw
+[   84.765670] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=3,val=0]
+[   84.765672] fw[RD] exit [len=2]
+[   84.765683] fw[RD]: hst: len=2 dev_id=0 sim=0xffffff8000a51ee0
+[   84.765687] fw[RD] [empty]: hst: len=2 sim_id=0 (WR)in=4 (RD)out=4 flags=0x20002
+[   84.765688] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   84.765699] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   84.765701] fw[WR]: send msix num=3
+[   84.765702] gsi_send_msix: USR_TASK_CLEAR
+[   84.765705] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   84.765720] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   84.765721] fw[WR]: send msix num=3
+[   84.765723] gsi_send_msix: USR_TASK_CLEAR
+[   84.765725] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   84.765732] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   84.765734] fw[WR]: send msix num=3
+[   84.765735] gsi_send_msix: USR_TASK_CLEAR
+[   84.765738] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   84.767450] gsi_doorbell_wq_irq: enter IRQ=49
+[   84.771724] [ACC DB]: recieved ACC event for apuc=0 ev_id=0 ev_val=0x00000010
+[   84.771726] [ACC DB]: wake_up_all ACC2fw
+[   84.771791] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=0]
+[   84.771793] fw[RD] exit [len=2]
+[   84.771818] fw[WR] [pid=11502]: hst: len=2 offset=0xffffff800ac0beb8 dev_id=0
+[   84.771819] fw[WR]: send msix num=4
+[   84.771821] gsi_send_msix: USR_TASK_COMP_READY
+[   84.771824] [MSI-X]: gsi_rfu_set_msix(4): the writen OR mask=0x10 [msix= 0x00000010]
+[   84.771830] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   84.771833] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=13 (RD)out=13 flags=0x20002
+[   84.771834] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   84.771903] gsi_doorbell_wq_irq: enter IRQ=46
+[   84.776185] [host DB]: gsi_host_doorbell_event_cb: doorbell event[3] ( apuc=1 ev_id=1 ev_val=0x000000ff)
+[   84.776186] [host DB]: wake_up_all host2fw
+[   84.776207] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   84.776209] fw[WR]: send msix num=3
+[   84.776210] gsi_send_msix: USR_TASK_CLEAR
+[   84.776213] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   84.776223] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=3,val=255]
+[   84.776224] fw[RD] exit [len=2]
+[   84.776234] fw[RD]: hst: len=2 dev_id=0 sim=0xffffff8000a51ee0
+[   84.776238] fw[RD] [empty]: hst: len=2 sim_id=0 (WR)in=5 (RD)out=5 flags=0x20002
+[   84.776239] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   84.776247] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   84.776249] fw[WR]: send msix num=3
+[   84.776250] gsi_send_msix: USR_TASK_CLEAR
+[   84.776253] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   94.261587] gsi_doorbell_wq_irq: enter IRQ=46
+[   94.265886] [host DB]: gsi_host_doorbell_event_cb: doorbell event[3] ( apuc=1 ev_id=1 ev_val=0x00000000)
+[   94.265889] [host DB]: wake_up_all host2fw
+[   94.266023] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=3,val=0]
+[   94.266027] fw[RD] exit [len=2]
+[   94.266055] fw[RD]: hst: len=2 dev_id=0 sim=0xffffff8000a51ee0
+[   94.266059] fw[RD] [empty]: hst: len=2 sim_id=0 (WR)in=6 (RD)out=6 flags=0x20002
+[   94.266061] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   94.266178] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   94.266180] fw[WR]: send msix num=3
+[   94.266182] gsi_send_msix: USR_TASK_CLEAR
+[   94.266186] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   94.266215] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   94.266217] fw[WR]: send msix num=3
+[   94.266218] gsi_send_msix: USR_TASK_CLEAR
+[   94.266221] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   94.266242] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   94.266243] fw[WR]: send msix num=3
+[   94.266244] gsi_send_msix: USR_TASK_CLEAR
+[   94.266247] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   94.266268] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   94.266269] fw[WR]: send msix num=3
+[   94.266271] gsi_send_msix: USR_TASK_CLEAR
+[   94.266273] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   94.266294] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   94.266296] fw[WR]: send msix num=3
+[   94.266297] gsi_send_msix: USR_TASK_CLEAR
+[   94.266300] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   94.266306] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   94.266308] fw[WR]: send msix num=3
+[   94.266309] gsi_send_msix: USR_TASK_CLEAR
+[   94.266312] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   94.271201] gsi_doorbell_wq_irq: enter IRQ=49
+[   94.275493] [ACC DB]: recieved ACC event for apuc=0 ev_id=0 ev_val=0x00000010
+[   94.275495] [ACC DB]: wake_up_all ACC2fw
+[   94.275500] [ACC DB]: recieved ACC event for apuc=1 ev_id=0 ev_val=0x00000010
+[   94.275502] [ACC DB]: wake_up_all ACC2fw
+[   94.275504] [ACC DB]: recieved ACC event for apuc=2 ev_id=0 ev_val=0x00000010
+[   94.275506] [ACC DB]: wake_up_all ACC2fw
+[   94.275629] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=0]
+[   94.275632] fw[RD] exit [len=2]
+[   94.275668] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   94.275671] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=1]
+[   94.275673] fw[RD] exit [len=2]
+[   94.275681] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   94.275683] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=2]
+[   94.275685] fw[RD] exit [len=2]
+[   94.275692] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   94.275696] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=16 (RD)out=16 flags=0x20002
+[   94.275697] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   94.275802] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   94.275815] fw[WR]: send msix num=3
+[   94.275817] gsi_send_msix: USR_TASK_CLEAR
+[   94.275821] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   96.053551] gsi_doorbell_wq_irq: enter IRQ=49
+[   96.057848] [ACC DB]: recieved ACC event for apuc=3 ev_id=0 ev_val=0x00000010
+[   96.057852] [ACC DB]: wake_up_all ACC2fw
+[   96.057984] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=3]
+[   96.057988] fw[RD] exit [len=2]
+[   96.058029] fw[WR] [pid=11502]: hst: len=2 offset=0xffffff800ac0beb8 dev_id=0
+[   96.058032] fw[WR]: send msix num=4
+[   96.058034] gsi_send_msix: USR_TASK_COMP_READY
+[   96.058038] [MSI-X]: gsi_rfu_set_msix(4): the writen OR mask=0x10 [msix= 0x00000010]
+[   96.058047] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   96.058051] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=17 (RD)out=17 flags=0x20002
+[   96.058053] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   96.058145] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   96.058147] fw[WR]: send msix num=3
+[   96.058148] gsi_send_msix: USR_TASK_CLEAR
+[   96.058151] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   96.058194] gsi_doorbell_wq_irq: enter IRQ=46
+[   96.062470] [host DB]: gsi_host_doorbell_event_cb: doorbell event[3] ( apuc=1 ev_id=1 ev_val=0x000000ff)
+[   96.062472] [host DB]: wake_up_all host2fw
+[   96.062687] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=3,val=255]
+[   96.062689] fw[RD] exit [len=2]
+[   96.062702] fw[RD]: hst: len=2 dev_id=0 sim=0xffffff8000a51ee0
+[   96.062705] fw[RD] [empty]: hst: len=2 sim_id=0 (WR)in=7 (RD)out=7 flags=0x20002
+[   96.062707] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   96.062716] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   96.062718] fw[WR]: send msix num=3
+[   96.062719] gsi_send_msix: USR_TASK_CLEAR
+[   96.062722] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   96.339827] gsi_doorbell_wq_irq: enter IRQ=46
+[   96.344119] [host DB]: gsi_host_doorbell_event_cb: doorbell event[3] ( apuc=1 ev_id=1 ev_val=0x00000000)
+[   96.344121] [host DB]: wake_up_all host2fw
+[   96.344262] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=3,val=0]
+[   96.344265] fw[RD] exit [len=2]
+[   96.344293] fw[RD]: hst: len=2 dev_id=0 sim=0xffffff8000a51ee0
+[   96.344297] fw[RD] [empty]: hst: len=2 sim_id=0 (WR)in=8 (RD)out=8 flags=0x20002
+[   96.344299] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   96.344358] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   96.344360] fw[WR]: send msix num=3
+[   96.344362] gsi_send_msix: USR_TASK_CLEAR
+[   96.344366] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   96.344395] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   96.344397] fw[WR]: send msix num=3
+[   96.344398] gsi_send_msix: USR_TASK_CLEAR
+[   96.344401] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   96.344423] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   96.344424] fw[WR]: send msix num=3
+[   96.344425] gsi_send_msix: USR_TASK_CLEAR
+[   96.344428] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   96.344449] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   96.344451] fw[WR]: send msix num=3
+[   96.344452] gsi_send_msix: USR_TASK_CLEAR
+[   96.344455] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   96.344477] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   96.344478] fw[WR]: send msix num=3
+[   96.344480] gsi_send_msix: USR_TASK_CLEAR
+[   96.344482] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   96.344489] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   96.344491] fw[WR]: send msix num=3
+[   96.344492] gsi_send_msix: USR_TASK_CLEAR
+[   96.344495] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   96.349367] gsi_doorbell_wq_irq: enter IRQ=49
+[   96.353657] [ACC DB]: recieved ACC event for apuc=0 ev_id=0 ev_val=0x00000010
+[   96.353659] [ACC DB]: wake_up_all ACC2fw
+[   96.353665] [ACC DB]: recieved ACC event for apuc=1 ev_id=0 ev_val=0x00000010
+[   96.353666] [ACC DB]: wake_up_all ACC2fw
+[   96.353669] [ACC DB]: recieved ACC event for apuc=2 ev_id=0 ev_val=0x00000010
+[   96.353670] [ACC DB]: wake_up_all ACC2fw
+[   96.353788] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=0]
+[   96.353791] fw[RD] exit [len=2]
+[   96.353826] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   96.353829] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=1]
+[   96.353831] fw[RD] exit [len=2]
+[   96.353839] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   96.353842] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=2]
+[   96.353843] fw[RD] exit [len=2]
+[   96.353850] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   96.353854] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=20 (RD)out=20 flags=0x20002
+[   96.353856] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   96.353879] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   96.353881] fw[WR]: send msix num=3
+[   96.353883] gsi_send_msix: USR_TASK_CLEAR
+[   96.353887] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   98.128519] gsi_doorbell_wq_irq: enter IRQ=49
+[   98.132819] [ACC DB]: recieved ACC event for apuc=3 ev_id=0 ev_val=0x00000010
+[   98.132821] [ACC DB]: wake_up_all ACC2fw
+[   98.132949] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=3]
+[   98.132952] fw[RD] exit [len=2]
+[   98.132995] fw[WR] [pid=11502]: hst: len=2 offset=0xffffff800ac0beb8 dev_id=0
+[   98.132997] fw[WR]: send msix num=4
+[   98.133000] gsi_send_msix: USR_TASK_COMP_READY
+[   98.133004] [MSI-X]: gsi_rfu_set_msix(4): the writen OR mask=0x10 [msix= 0x00000010]
+[   98.133012] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   98.133016] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=21 (RD)out=21 flags=0x20002
+[   98.133018] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   98.133063] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   98.133065] fw[WR]: send msix num=3
+[   98.133066] gsi_send_msix: USR_TASK_CLEAR
+[   98.133069] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   98.133168] gsi_doorbell_wq_irq: enter IRQ=46
+[   98.137451] [host DB]: gsi_host_doorbell_event_cb: doorbell event[3] ( apuc=1 ev_id=1 ev_val=0x000000ff)
+[   98.137453] [host DB]: wake_up_all host2fw
+[   98.137677] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=3,val=255]
+[   98.137679] fw[RD] exit [len=2]
+[   98.137692] fw[RD]: hst: len=2 dev_id=0 sim=0xffffff8000a51ee0
+[   98.137695] fw[RD] [empty]: hst: len=2 sim_id=0 (WR)in=9 (RD)out=9 flags=0x20002
+[   98.137697] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   98.137706] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   98.137708] fw[WR]: send msix num=3
+[   98.137710] gsi_send_msix: USR_TASK_CLEAR
+[   98.137713] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   98.412953] gsi_doorbell_wq_irq: enter IRQ=46
+[   98.417251] [host DB]: gsi_host_doorbell_event_cb: doorbell event[3] ( apuc=1 ev_id=1 ev_val=0x00000000)
+[   98.417254] [host DB]: wake_up_all host2fw
+[   98.417386] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=3,val=0]
+[   98.417389] fw[RD] exit [len=2]
+[   98.417417] fw[RD]: hst: len=2 dev_id=0 sim=0xffffff8000a51ee0
+[   98.417421] fw[RD] [empty]: hst: len=2 sim_id=0 (WR)in=10 (RD)out=10 flags=0x20002
+[   98.417423] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   98.417537] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   98.417540] fw[WR]: send msix num=3
+[   98.417542] gsi_send_msix: USR_TASK_CLEAR
+[   98.417546] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   98.417575] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   98.417577] fw[WR]: send msix num=3
+[   98.417578] gsi_send_msix: USR_TASK_CLEAR
+[   98.417581] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   98.417601] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   98.417603] fw[WR]: send msix num=3
+[   98.417604] gsi_send_msix: USR_TASK_CLEAR
+[   98.417607] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   98.417634] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   98.417635] fw[WR]: send msix num=3
+[   98.417637] gsi_send_msix: USR_TASK_CLEAR
+[   98.417640] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   98.417664] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   98.417666] fw[WR]: send msix num=3
+[   98.417667] gsi_send_msix: USR_TASK_CLEAR
+[   98.417670] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   98.417677] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   98.417679] fw[WR]: send msix num=3
+[   98.417680] gsi_send_msix: USR_TASK_CLEAR
+[   98.417683] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[   98.422531] gsi_doorbell_wq_irq: enter IRQ=49
+[   98.426825] [ACC DB]: recieved ACC event for apuc=0 ev_id=0 ev_val=0x00000010
+[   98.426826] [ACC DB]: wake_up_all ACC2fw
+[   98.426831] [ACC DB]: recieved ACC event for apuc=1 ev_id=0 ev_val=0x00000010
+[   98.426833] [ACC DB]: wake_up_all ACC2fw
+[   98.426836] [ACC DB]: recieved ACC event for apuc=2 ev_id=0 ev_val=0x00000010
+[   98.426837] [ACC DB]: wake_up_all ACC2fw
+[   98.426946] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=0]
+[   98.426949] fw[RD] exit [len=2]
+[   98.426985] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   98.426988] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=1]
+[   98.426990] fw[RD] exit [len=2]
+[   98.426998] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   98.427001] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=2]
+[   98.427002] fw[RD] exit [len=2]
+[   98.427010] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[   98.427013] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=24 (RD)out=24 flags=0x20002
+[   98.427015] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[   98.427116] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[   98.427118] fw[WR]: send msix num=3
+[   98.427120] gsi_send_msix: USR_TASK_CLEAR
+[   98.427125] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  100.204441] gsi_doorbell_wq_irq: enter IRQ=49
+[  100.208737] [ACC DB]: recieved ACC event for apuc=3 ev_id=0 ev_val=0x00000010
+[  100.208740] [ACC DB]: wake_up_all ACC2fw
+[  100.209021] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=3]
+[  100.209024] fw[RD] exit [len=2]
+[  100.209064] fw[WR] [pid=11502]: hst: len=2 offset=0xffffff800ac0beb8 dev_id=0
+[  100.209067] fw[WR]: send msix num=4
+[  100.209069] gsi_send_msix: USR_TASK_COMP_READY
+[  100.209073] [MSI-X]: gsi_rfu_set_msix(4): the writen OR mask=0x10 [msix= 0x00000010]
+[  100.209082] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[  100.209085] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=25 (RD)out=25 flags=0x20002
+[  100.209087] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[  100.209187] gsi_doorbell_wq_irq: enter IRQ=46
+[  100.213465] [host DB]: gsi_host_doorbell_event_cb: doorbell event[3] ( apuc=1 ev_id=1 ev_val=0x000000ff)
+[  100.213467] [host DB]: wake_up_all host2fw
+[  100.213605] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  100.213607] fw[WR]: send msix num=3
+[  100.213609] gsi_send_msix: USR_TASK_CLEAR
+[  100.213612] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  100.213635] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=3,val=255]
+[  100.213638] fw[RD] exit [len=2]
+[  100.213649] fw[RD]: hst: len=2 dev_id=0 sim=0xffffff8000a51ee0
+[  100.213653] fw[RD] [empty]: hst: len=2 sim_id=0 (WR)in=11 (RD)out=11 flags=0x20002
+[  100.213654] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[  100.213663] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  100.213664] fw[WR]: send msix num=3
+[  100.213666] gsi_send_msix: USR_TASK_CLEAR
+[  100.213669] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  100.483909] gsi_doorbell_wq_irq: enter IRQ=46
+[  100.488204] [host DB]: gsi_host_doorbell_event_cb: doorbell event[3] ( apuc=1 ev_id=1 ev_val=0x00000000)
+[  100.488207] [host DB]: wake_up_all host2fw
+[  100.488487] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=3,val=0]
+[  100.488490] fw[RD] exit [len=2]
+[  100.488516] fw[RD]: hst: len=2 dev_id=0 sim=0xffffff8000a51ee0
+[  100.488520] fw[RD] [empty]: hst: len=2 sim_id=0 (WR)in=12 (RD)out=12 flags=0x20002
+[  100.488522] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[  100.488669] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  100.488671] fw[WR]: send msix num=3
+[  100.488673] gsi_send_msix: USR_TASK_CLEAR
+[  100.488677] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  100.488706] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  100.488708] fw[WR]: send msix num=3
+[  100.488709] gsi_send_msix: USR_TASK_CLEAR
+[  100.488713] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  100.488734] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  100.488736] fw[WR]: send msix num=3
+[  100.488737] gsi_send_msix: USR_TASK_CLEAR
+[  100.488740] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  100.488761] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  100.488762] fw[WR]: send msix num=3
+[  100.488764] gsi_send_msix: USR_TASK_CLEAR
+[  100.488767] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  100.488788] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  100.488790] fw[WR]: send msix num=3
+[  100.488791] gsi_send_msix: USR_TASK_CLEAR
+[  100.488794] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  100.488801] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  100.488802] fw[WR]: send msix num=3
+[  100.488803] gsi_send_msix: USR_TASK_CLEAR
+[  100.488806] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  100.493637] gsi_doorbell_wq_irq: enter IRQ=49
+[  100.497923] [ACC DB]: recieved ACC event for apuc=0 ev_id=0 ev_val=0x00000010
+[  100.497925] [ACC DB]: wake_up_all ACC2fw
+[  100.497931] [ACC DB]: recieved ACC event for apuc=1 ev_id=0 ev_val=0x00000010
+[  100.497932] [ACC DB]: wake_up_all ACC2fw
+[  100.497935] [ACC DB]: recieved ACC event for apuc=2 ev_id=0 ev_val=0x00000010
+[  100.497936] [ACC DB]: wake_up_all ACC2fw
+[  100.498202] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=0]
+[  100.498204] fw[RD] exit [len=2]
+[  100.498239] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[  100.498242] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=1]
+[  100.498244] fw[RD] exit [len=2]
+[  100.498252] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[  100.498255] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=2]
+[  100.498256] fw[RD] exit [len=2]
+[  100.498264] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[  100.498267] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=28 (RD)out=28 flags=0x20002
+[  100.498269] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[  100.498414] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  100.498416] fw[WR]: send msix num=3
+[  100.498418] gsi_send_msix: USR_TASK_CLEAR
+[  100.498422] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  102.272620] gsi_doorbell_wq_irq: enter IRQ=49
+[  102.276919] [ACC DB]: recieved ACC event for apuc=3 ev_id=0 ev_val=0x00000010
+[  102.276922] [ACC DB]: wake_up_all ACC2fw
+[  102.277206] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=3]
+[  102.277210] fw[RD] exit [len=2]
+[  102.277250] fw[WR] [pid=11502]: hst: len=2 offset=0xffffff800ac0beb8 dev_id=0
+[  102.277252] fw[WR]: send msix num=4
+[  102.277255] gsi_send_msix: USR_TASK_COMP_READY
+[  102.277259] [MSI-X]: gsi_rfu_set_msix(4): the writen OR mask=0x10 [msix= 0x00000010]
+[  102.277271] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[  102.277275] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=29 (RD)out=29 flags=0x20002
+[  102.277277] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[  102.277397] gsi_doorbell_wq_irq: enter IRQ=46
+[  102.281683] [host DB]: gsi_host_doorbell_event_cb: doorbell event[3] ( apuc=1 ev_id=1 ev_val=0x000000ff)
+[  102.281685] [host DB]: wake_up_all host2fw
+[  102.281825] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  102.281827] fw[WR]: send msix num=3
+[  102.281829] gsi_send_msix: USR_TASK_CLEAR
+[  102.281832] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  102.281845] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=3,val=255]
+[  102.281847] fw[RD] exit [len=2]
+[  102.281858] fw[RD]: hst: len=2 dev_id=0 sim=0xffffff8000a51ee0
+[  102.281862] fw[RD] [empty]: hst: len=2 sim_id=0 (WR)in=13 (RD)out=13 flags=0x20002
+[  102.281864] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[  102.281878] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  102.281880] fw[WR]: send msix num=3
+[  102.281881] gsi_send_msix: USR_TASK_CLEAR
+[  102.281884] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  102.549214] gsi_doorbell_wq_irq: enter IRQ=46
+[  102.553503] [host DB]: gsi_host_doorbell_event_cb: doorbell event[3] ( apuc=1 ev_id=1 ev_val=0x00000000)
+[  102.553506] [host DB]: wake_up_all host2fw
+[  102.553622] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=3,val=0]
+[  102.553626] fw[RD] exit [len=2]
+[  102.553653] fw[RD]: hst: len=2 dev_id=0 sim=0xffffff8000a51ee0
+[  102.553656] fw[RD] [empty]: hst: len=2 sim_id=0 (WR)in=14 (RD)out=14 flags=0x20002
+[  102.553658] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[  102.553756] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  102.553758] fw[WR]: send msix num=3
+[  102.553760] gsi_send_msix: USR_TASK_CLEAR
+[  102.553764] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  102.553793] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  102.553795] fw[WR]: send msix num=3
+[  102.553796] gsi_send_msix: USR_TASK_CLEAR
+[  102.553799] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  102.553820] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  102.553821] fw[WR]: send msix num=3
+[  102.553822] gsi_send_msix: USR_TASK_CLEAR
+[  102.553825] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  102.553845] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  102.553846] fw[WR]: send msix num=3
+[  102.553848] gsi_send_msix: USR_TASK_CLEAR
+[  102.553851] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  102.553871] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  102.553872] fw[WR]: send msix num=3
+[  102.553874] gsi_send_msix: USR_TASK_CLEAR
+[  102.553877] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  102.553883] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  102.553885] fw[WR]: send msix num=3
+[  102.553886] gsi_send_msix: USR_TASK_CLEAR
+[  102.553889] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  102.558804] gsi_doorbell_wq_irq: enter IRQ=49
+[  102.563096] [ACC DB]: recieved ACC event for apuc=0 ev_id=0 ev_val=0x00000010
+[  102.563098] [ACC DB]: wake_up_all ACC2fw
+[  102.563103] [ACC DB]: recieved ACC event for apuc=1 ev_id=0 ev_val=0x00000010
+[  102.563105] [ACC DB]: wake_up_all ACC2fw
+[  102.563108] [ACC DB]: recieved ACC event for apuc=2 ev_id=0 ev_val=0x00000010
+[  102.563109] [ACC DB]: wake_up_all ACC2fw
+[  102.563243] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=0]
+[  102.563246] fw[RD] exit [len=2]
+[  102.563284] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[  102.563287] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=1]
+[  102.563289] fw[RD] exit [len=2]
+[  102.563297] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[  102.563299] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=2]
+[  102.563301] fw[RD] exit [len=2]
+[  102.563308] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[  102.563312] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=32 (RD)out=32 flags=0x20002
+[  102.563314] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[  102.563479] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  102.563481] fw[WR]: send msix num=3
+[  102.563483] gsi_send_msix: USR_TASK_CLEAR
+[  102.563488] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  104.340596] gsi_doorbell_wq_irq: enter IRQ=49
+[  104.344894] [ACC DB]: recieved ACC event for apuc=3 ev_id=0 ev_val=0x00000010
+[  104.344896] [ACC DB]: wake_up_all ACC2fw
+[  104.345170] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=3]
+[  104.345173] fw[RD] exit [len=2]
+[  104.345214] fw[WR] [pid=11502]: hst: len=2 offset=0xffffff800ac0beb8 dev_id=0
+[  104.345216] fw[WR]: send msix num=4
+[  104.345218] gsi_send_msix: USR_TASK_COMP_READY
+[  104.345222] [MSI-X]: gsi_rfu_set_msix(4): the writen OR mask=0x10 [msix= 0x00000010]
+[  104.345231] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[  104.345235] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=33 (RD)out=33 flags=0x20002
+[  104.345241] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[  104.345294] gsi_doorbell_wq_irq: enter IRQ=46
+[  104.349580] [host DB]: gsi_host_doorbell_event_cb: doorbell event[3] ( apuc=1 ev_id=1 ev_val=0x000000ff)
+[  104.349582] [host DB]: wake_up_all host2fw
+[  104.349882] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  104.349884] fw[WR]: send msix num=3
+[  104.349885] gsi_send_msix: USR_TASK_CLEAR
+[  104.349888] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  104.349901] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=3,val=255]
+[  104.349903] fw[RD] exit [len=2]
+[  104.349915] fw[RD]: hst: len=2 dev_id=0 sim=0xffffff8000a51ee0
+[  104.349918] fw[RD] [empty]: hst: len=2 sim_id=0 (WR)in=15 (RD)out=15 flags=0x20002
+[  104.349920] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[  104.349928] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  104.349930] fw[WR]: send msix num=3
+[  104.349931] gsi_send_msix: USR_TASK_CLEAR
+[  104.349934] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  104.624754] gsi_doorbell_wq_irq: enter IRQ=46
+[  104.629049] [host DB]: gsi_host_doorbell_event_cb: doorbell event[3] ( apuc=1 ev_id=1 ev_val=0x00000000)
+[  104.629051] [host DB]: wake_up_all host2fw
+[  104.629178] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=3,val=0]
+[  104.629182] fw[RD] exit [len=2]
+[  104.629209] fw[RD]: hst: len=2 dev_id=0 sim=0xffffff8000a51ee0
+[  104.629213] fw[RD] [empty]: hst: len=2 sim_id=0 (WR)in=16 (RD)out=16 flags=0x20002
+[  104.629215] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[  104.629332] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  104.629335] fw[WR]: send msix num=3
+[  104.629337] gsi_send_msix: USR_TASK_CLEAR
+[  104.629341] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  104.629371] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  104.629373] fw[WR]: send msix num=3
+[  104.629374] gsi_send_msix: USR_TASK_CLEAR
+[  104.629378] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  104.629399] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  104.629400] fw[WR]: send msix num=3
+[  104.629402] gsi_send_msix: USR_TASK_CLEAR
+[  104.629405] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  104.629426] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  104.629428] fw[WR]: send msix num=3
+[  104.629429] gsi_send_msix: USR_TASK_CLEAR
+[  104.629432] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  104.629453] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  104.629455] fw[WR]: send msix num=3
+[  104.629456] gsi_send_msix: USR_TASK_CLEAR
+[  104.629459] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  104.629465] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  104.629467] fw[WR]: send msix num=3
+[  104.629468] gsi_send_msix: USR_TASK_CLEAR
+[  104.629471] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  104.634287] gsi_doorbell_wq_irq: enter IRQ=49
+[  104.638578] [ACC DB]: recieved ACC event for apuc=0 ev_id=0 ev_val=0x00000010
+[  104.638580] [ACC DB]: wake_up_all ACC2fw
+[  104.638587] [ACC DB]: recieved ACC event for apuc=1 ev_id=0 ev_val=0x00000010
+[  104.638595] [ACC DB]: wake_up_all ACC2fw
+[  104.638603] [ACC DB]: recieved ACC event for apuc=2 ev_id=0 ev_val=0x00000010
+[  104.638608] [ACC DB]: wake_up_all ACC2fw
+[  104.638620] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=0]
+[  104.638627] fw[RD] exit [len=2]
+[  104.638668] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[  104.638677] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=1]
+[  104.638684] fw[RD] exit [len=2]
+[  104.638692] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[  104.638694] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=2]
+[  104.638696] fw[RD] exit [len=2]
+[  104.638703] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[  104.638707] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=36 (RD)out=36 flags=0x20002
+[  104.638709] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[  104.638725] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  104.638727] fw[WR]: send msix num=3
+[  104.638729] gsi_send_msix: USR_TASK_CLEAR
+[  104.638733] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  106.413346] gsi_doorbell_wq_irq: enter IRQ=49
+[  106.417646] [ACC DB]: recieved ACC event for apuc=3 ev_id=0 ev_val=0x00000010
+[  106.417648] [ACC DB]: wake_up_all ACC2fw
+[  106.417662] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=3]
+[  106.417664] fw[RD] exit [len=2]
+[  106.417703] fw[WR] [pid=11502]: hst: len=2 offset=0xffffff800ac0beb8 dev_id=0
+[  106.417706] fw[WR]: send msix num=4
+[  106.417708] gsi_send_msix: USR_TASK_COMP_READY
+[  106.417712] [MSI-X]: gsi_rfu_set_msix(4): the writen OR mask=0x10 [msix= 0x00000010]
+[  106.417720] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[  106.417724] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=37 (RD)out=37 flags=0x20002
+[  106.417726] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[  106.417740] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  106.417741] fw[WR]: send msix num=3
+[  106.417743] gsi_send_msix: USR_TASK_CLEAR
+[  106.417745] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  106.417794] gsi_doorbell_wq_irq: enter IRQ=46
+[  106.422076] [host DB]: gsi_host_doorbell_event_cb: doorbell event[3] ( apuc=1 ev_id=1 ev_val=0x000000ff)
+[  106.422079] [host DB]: wake_up_all host2fw
+[  106.422373] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=3,val=255]
+[  106.422376] fw[RD] exit [len=2]
+[  106.422391] fw[RD]: hst: len=2 dev_id=0 sim=0xffffff8000a51ee0
+[  106.422394] fw[RD] [empty]: hst: len=2 sim_id=0 (WR)in=17 (RD)out=17 flags=0x20002
+[  106.422396] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[  106.422570] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  106.422572] fw[WR]: send msix num=3
+[  106.422574] gsi_send_msix: USR_TASK_CLEAR
+[  106.422577] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  106.692614] gsi_doorbell_wq_irq: enter IRQ=46
+[  106.696913] [host DB]: gsi_host_doorbell_event_cb: doorbell event[3] ( apuc=1 ev_id=1 ev_val=0x00000000)
+[  106.696915] [host DB]: wake_up_all host2fw
+[  106.697184] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=3,val=0]
+[  106.697188] fw[RD] exit [len=2]
+[  106.697214] fw[RD]: hst: len=2 dev_id=0 sim=0xffffff8000a51ee0
+[  106.697217] fw[RD] [empty]: hst: len=2 sim_id=0 (WR)in=18 (RD)out=18 flags=0x20002
+[  106.697219] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[  106.697352] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  106.697355] fw[WR]: send msix num=3
+[  106.697357] gsi_send_msix: USR_TASK_CLEAR
+[  106.697360] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  106.697389] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  106.697391] fw[WR]: send msix num=3
+[  106.697392] gsi_send_msix: USR_TASK_CLEAR
+[  106.697395] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  106.697415] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  106.697417] fw[WR]: send msix num=3
+[  106.697418] gsi_send_msix: USR_TASK_CLEAR
+[  106.697421] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  106.697441] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  106.697442] fw[WR]: send msix num=3
+[  106.697443] gsi_send_msix: USR_TASK_CLEAR
+[  106.697446] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  106.697467] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  106.697468] fw[WR]: send msix num=3
+[  106.697470] gsi_send_msix: USR_TASK_CLEAR
+[  106.697473] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  106.697479] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  106.697481] fw[WR]: send msix num=3
+[  106.697482] gsi_send_msix: USR_TASK_CLEAR
+[  106.697485] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  106.702320] gsi_doorbell_wq_irq: enter IRQ=49
+[  106.706614] [ACC DB]: recieved ACC event for apuc=0 ev_id=0 ev_val=0x00000010
+[  106.706616] [ACC DB]: wake_up_all ACC2fw
+[  106.706622] [ACC DB]: recieved ACC event for apuc=1 ev_id=0 ev_val=0x00000010
+[  106.706624] [ACC DB]: wake_up_all ACC2fw
+[  106.706627] [ACC DB]: recieved ACC event for apuc=2 ev_id=0 ev_val=0x00000010
+[  106.706628] [ACC DB]: wake_up_all ACC2fw
+[  106.706636] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=0]
+[  106.706644] fw[RD] exit [len=2]
+[  106.706679] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[  106.706687] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=1]
+[  106.706695] fw[RD] exit [len=2]
+[  106.706708] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[  106.706716] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=2]
+[  106.706722] fw[RD] exit [len=2]
+[  106.706733] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[  106.706742] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=40 (RD)out=40 flags=0x20002
+[  106.706749] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[  106.706945] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  106.706947] fw[WR]: send msix num=3
+[  106.706949] gsi_send_msix: USR_TASK_CLEAR
+[  106.706952] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  108.484274] gsi_doorbell_wq_irq: enter IRQ=49
+[  108.488571] [ACC DB]: recieved ACC event for apuc=3 ev_id=0 ev_val=0x00000010
+[  108.488575] [ACC DB]: wake_up_all ACC2fw
+[  108.488587] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=3]
+[  108.488589] fw[RD] exit [len=2]
+[  108.488624] fw[WR] [pid=11502]: hst: len=2 offset=0xffffff800ac0beb8 dev_id=0
+[  108.488626] fw[WR]: send msix num=4
+[  108.488629] gsi_send_msix: USR_TASK_COMP_READY
+[  108.488632] [MSI-X]: gsi_rfu_set_msix(4): the writen OR mask=0x10 [msix= 0x00000010]
+[  108.488641] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[  108.488644] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=41 (RD)out=41 flags=0x20002
+[  108.488646] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[  108.488771] gsi_doorbell_wq_irq: enter IRQ=46
+[  108.493055] [host DB]: gsi_host_doorbell_event_cb: doorbell event[3] ( apuc=1 ev_id=1 ev_val=0x000000ff)
+[  108.493057] [host DB]: wake_up_all host2fw
+[  108.493104] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=3,val=255]
+[  108.493106] fw[RD] exit [len=2]
+[  108.493117] fw[RD]: hst: len=2 dev_id=0 sim=0xffffff8000a51ee0
+[  108.493120] fw[RD] [empty]: hst: len=2 sim_id=0 (WR)in=19 (RD)out=19 flags=0x20002
+[  108.493122] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[  108.493137] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  108.493138] fw[WR]: send msix num=3
+[  108.493140] gsi_send_msix: USR_TASK_CLEAR
+[  108.493143] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  108.768298] gsi_doorbell_wq_irq: enter IRQ=46
+[  108.772595] [host DB]: gsi_host_doorbell_event_cb: doorbell event[3] ( apuc=1 ev_id=1 ev_val=0x00000000)
+[  108.772599] [host DB]: wake_up_all host2fw
+[  108.772879] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=3,val=0]
+[  108.772883] fw[RD] exit [len=2]
+[  108.772908] fw[RD]: hst: len=2 dev_id=0 sim=0xffffff8000a51ee0
+[  108.772912] fw[RD] [empty]: hst: len=2 sim_id=0 (WR)in=20 (RD)out=20 flags=0x20002
+[  108.772914] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[  108.773065] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  108.773068] fw[WR]: send msix num=3
+[  108.773070] gsi_send_msix: USR_TASK_CLEAR
+[  108.773073] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  108.773103] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  108.773104] fw[WR]: send msix num=3
+[  108.773106] gsi_send_msix: USR_TASK_CLEAR
+[  108.773109] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  108.773130] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  108.773132] fw[WR]: send msix num=3
+[  108.773133] gsi_send_msix: USR_TASK_CLEAR
+[  108.773136] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  108.773157] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  108.773158] fw[WR]: send msix num=3
+[  108.773160] gsi_send_msix: USR_TASK_CLEAR
+[  108.773163] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  108.773184] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  108.773185] fw[WR]: send msix num=3
+[  108.773187] gsi_send_msix: USR_TASK_CLEAR
+[  108.773190] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  108.773196] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  108.773198] fw[WR]: send msix num=3
+[  108.773199] gsi_send_msix: USR_TASK_CLEAR
+[  108.773202] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  108.778025] gsi_doorbell_wq_irq: enter IRQ=49
+[  108.782315] [ACC DB]: recieved ACC event for apuc=0 ev_id=0 ev_val=0x00000010
+[  108.782317] [ACC DB]: wake_up_all ACC2fw
+[  108.782325] [ACC DB]: recieved ACC event for apuc=1 ev_id=0 ev_val=0x00000010
+[  108.782332] [ACC DB]: wake_up_all ACC2fw
+[  108.782340] [ACC DB]: recieved ACC event for apuc=2 ev_id=0 ev_val=0x00000010
+[  108.782346] [ACC DB]: wake_up_all ACC2fw
+[  108.782357] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=0]
+[  108.782364] fw[RD] exit [len=2]
+[  108.782398] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[  108.782406] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=1]
+[  108.782413] fw[RD] exit [len=2]
+[  108.782425] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[  108.782427] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=2]
+[  108.782429] fw[RD] exit [len=2]
+[  108.782436] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[  108.782440] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=44 (RD)out=44 flags=0x20002
+[  108.782442] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[  108.782457] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  108.782459] fw[WR]: send msix num=3
+[  108.782461] gsi_send_msix: USR_TASK_CLEAR
+[  108.782464] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  110.557123] gsi_doorbell_wq_irq: enter IRQ=49
+[  110.561423] [ACC DB]: recieved ACC event for apuc=3 ev_id=0 ev_val=0x00000010
+[  110.561425] [ACC DB]: wake_up_all ACC2fw
+[  110.561438] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=16,val=3]
+[  110.561440] fw[RD] exit [len=2]
+[  110.561479] fw[WR] [pid=11502]: hst: len=2 offset=0xffffff800ac0beb8 dev_id=0
+[  110.561481] fw[WR]: send msix num=4
+[  110.561483] gsi_send_msix: USR_TASK_COMP_READY
+[  110.561487] [MSI-X]: gsi_rfu_set_msix(4): the writen OR mask=0x10 [msix= 0x00000010]
+[  110.561496] fw[RD]: acc0: len=2 dev_id=1 sim=0xffffff8000a51ee0
+[  110.561499] fw[RD] [empty]: acc0: len=2 sim_id=1 (WR)in=45 (RD)out=45 flags=0x20002
+[  110.561501] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[  110.561515] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  110.561516] fw[WR]: send msix num=3
+[  110.561518] gsi_send_msix: USR_TASK_CLEAR
+[  110.561521] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]
+[  110.561621] gsi_doorbell_wq_irq: enter IRQ=46
+[  110.565902] [host DB]: gsi_host_doorbell_event_cb: doorbell event[3] ( apuc=1 ev_id=1 ev_val=0x000000ff)
+[  110.565907] [host DB]: wake_up_all host2fw
+[  110.565950] fw[RD] cpy2usr - hst2fw[0#1] ==> usr DB[num=3,val=255]
+[  110.565952] fw[RD] exit [len=2]
+[  110.565966] fw[RD]: hst: len=2 dev_id=0 sim=0xffffff8000a51ee0
+[  110.565970] fw[RD] [empty]: hst: len=2 sim_id=0 (WR)in=21 (RD)out=21 flags=0x20002
+[  110.565972] simi[RD]: "gsifw-0.9.1.1" - going to sleep
+[  110.566041] fw[WR] [pid=11503]: hst: len=2 offset=0xffffff80117ebeb8 dev_id=0
+[  110.566042] fw[WR]: send msix num=3
+[  110.566044] gsi_send_msix: USR_TASK_CLEAR
+[  110.566047] [MSI-X]: gsi_rfu_set_msix(3): the writen OR mask=0x8 [msix= 0x00000008]

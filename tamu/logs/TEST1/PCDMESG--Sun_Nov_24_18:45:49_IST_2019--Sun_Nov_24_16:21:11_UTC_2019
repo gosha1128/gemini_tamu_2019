@@ -1,0 +1,5 @@
+pc date=Sun_Nov_24_18:45:49_IST_2019
+board date=Sun_Nov_24_16:21:11_UTC_2019
+PARAMETERS: TEST1
+[Sun Nov 24 18:43:53 2019] cp210x ttyUSB1: failed set req 0x1e size 4 status: -32
+[Sun Nov 24 18:43:53 2019] cp210x ttyUSB1: failed to set baud rate to 300

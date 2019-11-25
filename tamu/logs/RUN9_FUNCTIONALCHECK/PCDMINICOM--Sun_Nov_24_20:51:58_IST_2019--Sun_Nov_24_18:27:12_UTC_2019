@@ -1,0 +1,58 @@
+[   73.648624] gsi_sim dev_open: minor=243 dev id=0 idx=0
+[   73.653823] gsi-fw a0010000.gsi-fw: attempt to locate memory on host_rfu #0
+[   73.660745] gsi-fw a0010000.gsi-fw: memory located on host_rfu #0 @0xa0010000-0xa0010fff
+[   73.669053] gsi_sim dev_open: minor=243 dev id=1 idx=1
+[   73.674155] gsi-fw a0010000.gsi-fw: attempt to locate memory on acc0_mailbox #3
+[   73.681421] gsi-fw a0010000.gsi-fw: memory located on acc0_mailbox #3 @0xa0100000-0xa0101fff
+[   73.689860] gsi-fw a0010000.gsi-fw: attempt to locate memory on acc0_rfu #1
+[   73.696782] gsi-fw a0010000.gsi-fw: memory located on acc0_rfu #1 @0xa0200000-0xa0200fff
+[   73.704863] gsi-fw a0010000.gsi-fw: attempt to locate memory on accb0_rfu #13
+[   73.711970] gsi-fw a0010000.gsi-fw: memory located on accb0_rfu #13 @0xb0020000-0xb0020fff
+[   73.720228] gsi-fw a0010000.gsi-fw: attempt to locate memory on acca0_apb #12
+[   73.727343] gsi-fw a0010000.gsi-fw: memory located on acca0_apb #12 @0xb1000000-0xb101ffff
+[   73.735595] gsi-fw a0010000.gsi-fw: attempt to locate memory on ubc0_rfu #14
+[   73.742622] gsi-fw a0010000.gsi-fw: memory located on ubc0_rfu #14 @0xb1040000-0xb1040fff
+[   73.750884] gsi_sim dev_open: minor=243 dev id=2 idx=2
+[   77.404224] gsi_doorbell_wq_irq: enter IRQ=49
+[   77.426704] gsi_doorbell_wq_irq: enter IRQ=49
+[   77.449206] gsi_doorbell_wq_irq: enter IRQ=49
+[   77.471667] gsi_doorbell_wq_irq: enter IRQ=49
+[   84.732081] gsi_doorbell_wq_irq: enter IRQ=46
+[   84.742869] gsi_doorbell_wq_irq: enter IRQ=49
+[   84.747503] gsi_doorbell_wq_irq: enter IRQ=46
+[   84.756820] gsi_doorbell_wq_irq: enter IRQ=49
+[   84.761374] gsi_doorbell_wq_irq: enter IRQ=46
+[   84.767450] gsi_doorbell_wq_irq: enter IRQ=49
+[   84.771903] gsi_doorbell_wq_irq: enter IRQ=46
+[   94.261587] gsi_doorbell_wq_irq: enter IRQ=46
+[   94.271201] gsi_doorbell_wq_irq: enter IRQ=49
+[   96.053551] gsi_doorbell_wq_irq: enter IRQ=49
+[   96.058194] gsi_doorbell_wq_irq: enter IRQ=46
+[   96.339827] gsi_doorbell_wq_irq: enter IRQ=46
+[   96.349367] gsi_doorbell_wq_irq: enter IRQ=49
+[   98.128519] gsi_doorbell_wq_irq: enter IRQ=49
+[   98.133168] gsi_doorbell_wq_irq: enter IRQ=46
+[   98.412953] gsi_doorbell_wq_irq: enter IRQ=46
+[   98.422531] gsi_doorbell_wq_irq: enter IRQ=49
+[  100.204441] gsi_doorbell_wq_irq: enter IRQ=49
+[  100.209187] gsi_doorbell_wq_irq: enter IRQ=46
+[  100.483909] gsi_doorbell_wq_irq: enter IRQ=46
+[  100.493637] gsi_doorbell_wq_irq: enter IRQ=49
+[  102.272620] gsi_doorbell_wq_irq: enter IRQ=49
+[  102.277397] gsi_doorbell_wq_irq: enter IRQ=46
+[  102.549214] gsi_doorbell_wq_irq: enter IRQ=46
+[  102.558804] gsi_doorbell_wq_irq: enter IRQ=49
+[  104.340596] gsi_doorbell_wq_irq: enter IRQ=49
+[  104.345294] gsi_doorbell_wq_irq: enter IRQ=46
+[  104.624754] gsi_doorbell_wq_irq: enter IRQ=46
+[  104.634287] gsi_doorbell_wq_irq: enter IRQ=49
+[  106.413346] gsi_doorbell_wq_irq: enter IRQ=49
+[  106.417794] gsi_doorbell_wq_irq: enter IRQ=46
+[  106.692614] gsi_doorbell_wq_irq: enter IRQ=46
+[  106.702320] gsi_doorbell_wq_irq: enter IRQ=49
+[  108.484274] gsi_doorbell_wq_irq: enter IRQ=49
+[  108.488771] gsi_doorbell_wq_irq: enter IRQ=46
+[  108.768298] gsi_doorbell_wq_irq: enter IRQ=46
+[  108.778025] gsi_doorbell_wq_irq: enter IRQ=49
+[  110.557123] gsi_doorbell_wq_irq: enter IRQ=49
+[  110.561621] gsi_doorbell_wq_irq: enter IRQ=46
