@@ -2,4 +2,4 @@
 *.jpg
 logs/
 logs/*
-
+.DS_Store*
