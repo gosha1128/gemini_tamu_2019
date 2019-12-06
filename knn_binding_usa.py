@@ -1,6 +1,7 @@
 import sys
+import datetime
 
-print("LOADING!")
+print(datetime.datetime.now(),"LOADING!")
 sys.stdout.flush()
 
 sys.path.insert(0, '00.09.00')
@@ -31,30 +32,30 @@ def tearDownSim():
         raise Exception('gnl_bindings.destroy_simulator failed with {}'.format(s))
 
 def setUpGNL():
-    print("1", flush=True)
+    print(datetime.datetime.now(),"1", flush=True)
     sys.stdout.flush()
     s = gnl_bindings.gdl_init()
     if s:
         raise Exception('gnl_bindings.gdl_init failed with {}'.format(s))
     s, gdl_ctx = gnl_bindings.gdl_context_find_and_alloc(apuc_count=4, mem_size=0x10000000)  # need to change num of apuc
-    print("2")
+    print(datetime.datetime.now(),"2", flush=True)
     if s:
         raise Exception('gnl_bindings.gdl_context_find_and_alloc failed with {}'.format(s))
     s = gnl_bindings.init()
-    print("3")
+    print(datetime.datetime.now(),"3", flush=True)
     if s:
         raise Exception('gnl_bindings.init failed with {}'.format(s))
     s, base_ctx = gnl_bindings.create_base_context(gdl_ctx)
-    print("4")
+    print(datetime.datetime.now(),"4", flush=True)
     if s:
         raise Exception('gnl_bindings.create_base_context failed with {}'.format(s))
     s, gnl_ctxs = gnl_bindings.create_contexts(base_ctx, [4])  # need to change num of apuc
-    print("5")
+    print(datetime.datetime.now(),"5", flush=True)
     if s:
         raise Exception('gnl_bindings.create_contexts failed with {}'.format(s))
     ctx = gnl_ctxs[0]
     s = gnl_bindings.pm_ctl(ctx, True)
-    print("6", flush=True)
+    print(datetime.datetime.now(),"5", flush=True)
     sys.stdout.flush()
     if s:
         raise Exception('gnl_bindings.pm_ctl failed with {}'.format(s))
@@ -96,9 +97,9 @@ if __name__ == '__main__':
         sys.exit()
     else:
         num_iterations = int(sys.argv[1])
-    print("before gnl setup")
+    print(datetime.datetime.now(),"before gnl setup")
     gdl_ctx, base_ctx, ctx = setUpGNL()
-    print("after gnl setup")
+    print(datetime.datetime.now(),"after gnl setup")
 
     # define the knn we want to execute
 
@@ -144,13 +145,13 @@ if __name__ == '__main__':
         for i in range(num_iterations):
             # Act
             start = time.time()
-            print("searching knn_hamming !!!!!!!!!!!", flush=True)
+            print(datetime.datetime.now(),"searching knn_hamming !!!!!!!!!!!", flush=True)
             s = gnl_bindings.knn_hamming(ctx, gnl_out_vals, gnl_out_indices, gnl_queries, gnl_data, k)
             #print("ret", s)
             assert (s == 0)
             end = time.time()
             SearchTime = end - start
-            print(" search duration:", str(end - start), flush=True)
+            print(datetime.datetime.now()," search duration:", str(end - start), flush=True)
             # convert the output from gnl arrays to numpy
             s, np_out_vals = gbu.create_numpy_array_from_gnl(ctx, gnl_out_vals)
             assert (s == 0)
@@ -160,13 +161,13 @@ if __name__ == '__main__':
         while True:
             # Act
             start = time.time()
-            print("searching knn_hamming !!!!!!!!!!!", flush=True)
+            print(datetime.datetime.now(),"searching knn_hamming !!!!!!!!!!!", flush=True)
             s = gnl_bindings.knn_hamming(ctx, gnl_out_vals, gnl_out_indices, gnl_queries, gnl_data, k)
             #print("ret", s)
             assert (s == 0)
             end = time.time()
             SearchTime = end - start
-            print(" search duration:", str(end - start), flush=True)
+            print(datetime.datetime.now()," search duration:", str(end - start), flush=True)
             # convert the output from gnl arrays to numpy
             s, np_out_vals = gbu.create_numpy_array_from_gnl(ctx, gnl_out_vals)
             print(s)

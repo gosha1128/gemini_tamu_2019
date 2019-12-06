@@ -73,7 +73,7 @@ sudo sshpass -p "root" sudo sshpass -p "root" ssh -o StrictHostKeyChecking=no ro
 
 echo "Syncing board log files..."
 sudo sshpass -p "root" scp -r root@192.168.32.4:/home/root/logs/* ./logs/
-
+sudo sshpass -p "root" scp -r root@192.168.32.4:/var/log/dmesg "./logs/$1/"
 
 echo "Done."
 

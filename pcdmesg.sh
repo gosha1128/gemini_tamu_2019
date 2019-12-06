@@ -48,6 +48,6 @@ echo "PARAMETERS: $@" >> "$LOGFILE"
 echo "Monitoring and capturing dmesg logging..."
 echo
 while true;
-do dmesg -e -c | tee -a "$LOGFILE"
+do dmesg -T -c | tee -a "$LOGFILE"
 done
 
